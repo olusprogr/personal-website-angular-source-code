@@ -1,0 +1,20 @@
+[
+  {
+    "title": "My Journey",
+    "description": "In the beginning, it was a challenge – the code looked like a complicated mix of letters and symbols. I remember spending hours watching programming tutorials to learn the basics. One day, I stumbled upon the fascinating world of GUI programming with the Tkinter library. It was a breakthrough! Suddenly, I could create my own user interfaces and bring my creative ideas to life. One of my early projects was crafting a food ordering menu like the one at my school. With Tkinter, I could design interactive menus and implement ordering processes. Since then, I've steadily expanded my knowledge and worked on various projects.\n\nProgramming, for me, is a constant journey of discovery, and I look forward to realizing many exciting projects ahead.",
+    "subTitle": "Currently diving deep into Web Development and APIs.",
+    "subDescription": "Now, let me take you through some of these projects..."
+  },
+  {
+    "title": "My Experience",
+    "description": "I bring 3 years of experience to the table, particularly in the realm of Python for the back-end and JavaScript for the front-end. My expertise lies in GUI development and Object-Oriented Programming (OOP). While I am still in the early stages of my web development journey, I am already proficient in coding entire pages using Angular. Additionally, I have a foundational understanding of C++ from my school days, where I learned it at a basic level. I approach my work with dedication and a commitment to continuous learning, always striving to enhance my skills and explore new horizons in programming.",
+    "subTitle": "Writing code since I was 13 years old.",
+    "subDescription": ""
+  },
+  {
+    "title": "Skills I have Learned",
+    "description": "Over the last three years, I've learned Python, diving into object-oriented programming, Tkinter, Pycord, and Sqlite. I've also spent a year getting familiar with JavaScript and Angular, covering basics and Angular materials. Plus, I've been using RaspiOS (Linux) for over a year, hosting my Discord bot and managing tasks with Crontab. Recently, I've been exploring Fast API, dedicating a month to grasp its basics.",
+    "subTitle": "Continuous learning with tools, frameworks, and technologies...",
+    "subDescription": ""
+  }
+]

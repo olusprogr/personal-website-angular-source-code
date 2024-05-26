@@ -1,0 +1,438 @@
+{
+  "architect-discord-bot": {
+      "view": {
+          "project-title": "ArchiTect Discord Bot",
+          "project-description": "A fast, efficient, and user-friendly bot with numerous features for your Discord servers.",
+          "project-img": "../../../assets/img/architect-discord-bot/architect.png"
+      },
+
+      "main-information": {
+          "project-name": "ArchiTect",
+          "creation-date": "26. June 2023",
+          "our-team": "ArchiTect-Development",
+          "project-website": "https://architect-discord-bot.onrender.com",
+          "code-repository": "https://github.com/olusprogr/ArchiTect-discord-bot",
+          "bot-invite": "https://discord.com/api/oauth2/authorize?client_id=1123005191038447646&permissions=8&scope=bot%20applications.commands",
+          "total-command-functions": 33,
+          "version-updates": "Current vesion: 2.0.0"
+      },
+      
+      "technologies-tools": {
+          "technologies": [
+              "Python",
+              "SQL"
+          ],
+          "tools": [
+              "Discord API",
+              "VS Code",
+              "Git",
+              "GitHub"
+          ]
+      },
+
+      "highlights": {
+        "challenges-solutions": [
+          {
+            "challenge": "Creating a bot that is user-friendly and efficient.",
+            "solution": "We created a bot that is easy to use and has a fast response time."
+          },
+          {
+            "challenge": "Clean and structured code and file system.",
+            "solution": "How to clean code tutorials on youtube and stackoverflow."
+          },
+          {
+            "challenge": "Adding usefull APIs to the bot.",
+            "solution": "Added reddit and steam API to implement meme and steam user information commands."
+          }
+        ],
+        "achievements-milestones": {
+          "achievements": [
+            "Added 33 commands to the bot.",
+            "Created a website for the bot.",
+            "Added a daily credits system."
+          ],
+          "milestones": [
+            "Reached 10 Servers."
+          ]
+        }
+      },
+
+      "our-team": {
+          "team-name": "ArchiTect-Development",
+          "team-members": [
+              {
+                  "name": "Olivier",
+                  "role": ["Project-owner", "Developer"],
+                  "link": "../../assets/img/project/architect/oli.webp"
+              },
+              {
+                  "name": "David",
+                  "role": ["Co-owner" ,"Developer"],
+                  "link": "../../assets/img/project/architect/david.webp"
+              },
+              {
+                  "name": "Samuel",
+                  "role": "Graphic Designer",
+                  "link": "../../assets/img/project/architect/samuel.webp"
+              },
+              {
+                  "name": "Levi",
+                  "role": "Developer",
+                  "link": "../../assets/img/project/architect/levi.webp"
+              },
+              {
+                  "name": "Konrad",
+                  "role": "Partner",
+                  "link": ""
+              }
+          ],
+          "discord-server": "https://discord.gg/CdSXauas"
+      },
+
+      "version-updates": {
+          "versions": [
+            {
+              "version-date": "v1.1.0 - 1.3.0 | 21/07- 25/07/2023",
+              "version-topic": "Added commands",
+              "version-description": "/help /kick /spam /activity /clear /embed /csgo_map /memberlist /ban"
+            },
+            {
+              "version-date": "v1.4.x | 29/07 - 19/08/2023",
+              "version-topic": "Added commands",
+              "version-description": "/support"
+            },
+            {
+              "version-date": "v1.5.x | 20/08 - 01/09/2023",
+              "version-topic": "Added commands",
+              "version-description": "/report /serverinfo /invite"
+            },
+            {
+              "version-date": "v.1.6.x | 02/09 - 09/09/2023",
+              "version-topic": "Added commands",
+              "version-description": "/timeout /unmute"
+            },
+            {
+              "version-date": "v1.7.x | 14/09 - 29/09/2023",
+              "version-topic": "Added commands",
+              "version-description": "/create password /give messages /rank /rank_get"
+            },
+            {
+              "version-date": "v1.8.x | 02/10 - 19/11/2023",
+              "version-topic": "Added commands",
+              "version-description": "/automod filter_invites /automod filter_insults /roles"
+            },
+            {
+              "version-date": "v.1.9.x | 24/11 - 12/12/2023",
+              "version-topic": "Added commands",
+              "version-description": "/daily_credits /meme"
+            },
+            {
+              "version-date": "v2.0.x | 31/03/2023",
+              "version-topic": "Added commands",
+              "version-description": "/steam search_for_user /steam get_user_details /steam get_user_friend_list /suggest about_us"
+            }
+          ]
+        }
+  },
+
+  "my-portfolio": {
+    "view": {
+      "project-title": "My Portfolio",
+      "project-description": "My official Portfolio to showcase all my works related to programming",
+      "project-img": "../../../assets/img/my-portfolio/my-portfolio.png",
+      "project-link": "https://olusprogr.github.io/personal-website/"
+    },
+  
+    "main-information": {
+      "project-name": "My Portfolio",
+      "creation-date": "03. December 2023",
+      "code-repository": "https://github.com/olusprogr/personal-website.git",
+      "total-command-functions": "Representing my current 4 best works and projects",
+      "version-updates": "Current version 1.3"
+    },
+  
+    "technologies-tools": {
+      "technologies": [
+        "HTML",
+        "CSS",
+        "TypeScript",
+        "Angular"
+      ],
+      "tools": [
+        "TailBlocks",
+        "Bootstrap"
+      ]
+    },
+  
+    "highlights": {
+      "challenges-solutions": [
+        {
+          "challenge": "Creating a responsive design",
+          "solution": "Firsly used Bootstrap with a bit of help with the min-widht and max-width properties in CSS and later used TailBlocks to create a responsive design."
+        },
+        {
+          "challenge": "Creating a dark/light mode",
+          "solution": "Firstly desided to use a button to switch between the two modes and later decided to use the dark mode only."
+        }
+      ],
+      "achievements-milestones": {
+        "achievements": [
+          "Improved the design of the website and my front-end skills.",
+          "Laarned how to use Angular and TailBlocks to create a responsive design."
+        ],
+        "milestones": [
+          "No yet reached any milestones."
+        ]
+      }
+    },
+  
+    "version-updates": {
+      "versions": [
+        {
+          "version-date": "v1.0.0 | 03/12/2023",
+          "version-topic": "Initial release",
+          "version-description": "Created the basic structure of the website with HTML CSS and JS."
+        },
+        {
+          "version-date": "v1.1.0 | 05/12/2023",
+          "version-topic": "Added new features",
+          "version-description": "Added a dark mode and a new section to the website. Improved the front-end."
+        },
+        {
+          "version-date": "v1.2.0 | 07/12/2023",
+          "version-topic": "Added new features",
+          "version-description": "Rewrote the website in Angular. And added Bootstrap."
+        },
+        {
+          "version-date": "v1.3.0 | 09/12/2023",
+          "version-topic": "Added new features",
+          "version-description": "Added TailBlocks to create a responsive design. Improved the front-end by a lot."
+        }
+      ]
+    }
+  },
+  
+  "python-banking-system": {
+    "view": {
+      "project-title": "Python Banking System",
+      "project-description": "Streamlined Banking System: A Python OOP and SQL Implementation.",
+      "project-img": "../../../assets/img/banking-system/banking-system.png",
+      "project-link": ""
+    },
+  
+    "main-information": {
+      "project-name": "Python Banking System",
+      "creation-date": "03. December 2023",
+      "our-team": "",
+      "code-repository": "https://github.com/olusprogr/Banking-system.git",
+      "bot-invite": "",
+      "total-command-functions": 12,
+      "version-updates": "Current version 1.3"
+    },
+  
+    "technologies-tools": {
+      "technologies": [
+        "Python",
+        "SQL"
+      ],
+      "tools": [
+        "Git",
+        "GitHub"
+      ]
+    },
+  
+    "highlights": {
+      "challenges-solutions": [],
+      "achievements-milestones": {
+        "achievements": [],
+        "milestones": []
+      }
+    }, 
+
+    "pictures": [
+      "../../assets/img/project/banking-system/main.png",
+      "../../assets/img/project/banking-system/paths.png",
+      "../../assets/img/project/banking-system/banking.png"
+    ],
+  
+    "version-updates": {
+      "versions": []
+    }
+  },  
+
+  "pay2drink": {
+    "view": {
+      "project-title": "Pay2drink",
+      "project-description": "Pay2Drink is an Angular-based solution for beverage vending machines, allowing users to conveniently order and pay for their favorite drinks.",
+      "project-img": "",
+      "project-link": ""
+    },
+  
+    "main-information": {
+      "project-name": "Pay2drink",
+      "creation-date": "24. January 2024",
+      "our-team": "Internship at Atruvia AG",
+      "code-repository": "https://github.com/olusprogr/pay2drink-atruvia.git",
+      "total-command-functions": 5,
+      "version-updates": "Current version 1.0"
+    },
+  
+    "technologies-tools": {
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ],
+      "tools": [
+        "Angular Materials",
+        "Bootstrap",
+        "Git",
+        "GitBucket"
+      ]
+    },
+  
+    "highlights": {
+      "challenges-solutions": [
+        
+      ],
+      "achievements-milestones": {
+        "achievements": [
+
+        ],
+        "milestones": []
+      }
+    },
+  
+    "our-team": {
+      "team-name": "Internship at Atruvia AG",
+      "team-members": [
+        {
+          "name": "Tom, Ben",
+          "role": ["Login", "Logout"]
+        },
+        {
+          "name": "Luis, Olivier",
+          "role": "Databases"
+        },
+        {
+          "name": "Milena",
+          "role": "Payment system"
+        },
+        {
+          "name": "Finn",
+          "role": ["Layout", "Shopping cart"]
+        },
+        {
+          "name": "Florian",
+          "role": "Credits"
+        }
+      ],
+      "discord-server": ""
+    },
+  
+    "version-updates": {
+      "versions": []
+    }
+  },
+
+  "game-team": {
+    "view": {
+      "project-title": "Game Team",
+      "project-description": "Game Team is a team of developers and 3d-designer who creates Counter Strike maps for the community. (In Cooperation with ArchiTect-Development)",
+      "project-img": "../../../assets/img/game-team/game-team.png",
+      "project-link": ""
+    },
+  
+    "main-information": {
+      "project-name": "Game Team",
+      "creation-date": "12. April 2024",
+      "our-team": "Game Team",
+      "code-repository": "https://github.com/olusprogr/game-team-website.git",
+      "total-command-functions": 2,
+      "version-updates": "Current version 1.8"
+    },
+  
+    "technologies-tools": {
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ],
+      "tools": [
+        "Angular Materials",
+        "Git",
+        "Tailwind",
+        "Hammer tools"
+      ]
+    },
+  
+    "highlights": {
+      "challenges-solutions": [
+        {
+          "challenge": "Designing the map realistic as it can be.",
+          "solution": "Practiced by debugging with shader."
+        }
+      ],
+      "achievements-milestones": {
+        "achievements": [
+          "Reached the first 100 downlaods",
+          "Reached the first 1000 downlaods | 10.05.2024"
+        ],
+        "milestones": []
+      }
+    },
+  
+    "our-team": {
+      "team-name": "Game Team",
+      "team-members": [
+        {
+          "name": "Simon",
+          "role": "Token manager"
+        },
+        {
+          "name": "Olivier",
+          "role": "Web designer",
+          "link": "../../assets/img/project/architect/oli.webp"
+        },
+        {
+          "name": "David",
+          "role": "Map creator",
+          "link": "../../assets/img/project/architect/david.webp"
+        },
+        {
+          "name": "Samuel",
+          "role": "Graphic Designer",
+          "link": "../../assets/img/project/architect/samuel.webp"
+        }
+      ],
+      "discord-server": "https://discord.gg/79Gcy8YK"
+    },
+  
+    "version-updates": {
+      "versions": [
+        {
+          "version-date": "v1.0 | 09/04/2024",
+          "version-topic": "Initial release",
+          "version-description": "Added Main Structure; Added A Site; Added A Apartments; Added A Hall"
+        },
+        {
+          "version-date": "v1.1 | 10/04/2024",
+          "version-topic": "Church update",
+          "version-description": "Bug fixes on A Site; Added A Heaven; Added more Roofs on A Site / A Apartments / A Hall; Added Church; Better Lighting"
+        },
+        {
+          "version-date": "v1.2 | 11/04/2024",
+          "version-topic": "T-spawn update",
+          "version-description": "Added T Spawn; Added Roads; Added A Garden; Added Ruin; Fixed Bugs & Lighting"
+        },
+        {
+          "version-date": "v1.3 | 12/04/2024",
+          "version-topic": "B-house and street update",
+          "version-description": "Added more roads; Added B House exterior; Added Clipping; Added Power lines; Fixed Bugs"
+        }
+      ]
+    }
+  }  
+}

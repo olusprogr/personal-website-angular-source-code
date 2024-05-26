@@ -1,0 +1,159 @@
+<app-header></app-header>
+
+<div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-200 px-6 py-2.5 sm:px-3.5 sm:before:flex-1" *ngIf="this.notification == true">
+  <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+    <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#757dc5] to-[#4639ff] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+  </div>
+  <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+    <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#757dc5] to-[#4639ff] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+  </div>
+  <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+    <p class="text-sm leading-6 text-gray-900">
+      <strong class="font-semibold">Last time updated: {{this.lastTimeUpdated}}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Some of the content might be outdated depending on the date
+    </p>
+  </div>
+  <div class="flex flex-1 justify-end">
+    <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]" (click)="closeNot()">
+      <span class="sr-only">Dismiss</span>
+      <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="Project img" [src]="this.currentProjectData['view']['project-img']">
+    <div class="text-center lg:w-2/3 w-full">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">{{this.currentProjectData["view"]["project-title"]}}</h1>
+      <p class="leading-relaxed mb-8">{{this.currentProjectData['view']['project-description']}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="-my-8 divide-y-2 divide-gray-800">
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-white">MAIN INFORMATION</span>
+          <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+        </div>
+        <div class="md:flex-grow">
+          <h6><strong>Project name: </strong>{{this.currentProjectData["main-information"]["project-name"]}}<br></h6>
+          <h6><strong>Creation date: </strong>{{this.currentProjectData["main-information"]["creation-date"]}}<br></h6>
+          <h6 *ngIf="this.currentProjectData['main-information']['our-team']"><strong>Our Team: </strong>{{this.currentProjectData['main-information']['our-team']}}<br></h6>
+          <h6 *ngIf="this.currentProjectData['main-information']['project-website']"><strong>Project Website: </strong><a [href]="this.currentProjectData['main-information']['project-website']">{{this.currentProjectData['main-information']['project-website']}}</a></h6>
+          <h6 *ngIf="this.currentProjectData['main-information']['code-repository']"><strong>Code Repository: </strong><a [href]="this.currentProjectData['main-information']['code-repository']">{{this.currentProjectData['main-information']['code-repository']}}</a></h6>
+          <h6 *ngIf="this.currentProjectData['main-information']['bot-invite']"><strong>Bot Invite Link: </strong><a [href]="this.currentProjectData['main-information']['bot-invite']">{{this.currentProjectData['main-information']['bot-invite']}}</a></h6>
+          <h6><strong>Total Commands/Functions: </strong>{{this.currentProjectData['main-information']['total-command-functions']}}<br></h6>
+          <h6><strong>Version Updates: </strong>{{this.currentProjectData['main-information']['version-updates']}}<br></h6>
+        </div>
+      </div>
+
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-white">TECHNOLOGIES AND TOOLS</span>
+          <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <div class="mx-4">
+            <strong>Technologies:</strong>
+            <ul>
+              <li *ngFor="let tech of this.currentProjectData['technologies-tools']['technologies']">{{tech}}</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Tools:</strong>
+            <ul>
+              <li *ngFor="let tool of this.currentProjectData['technologies-tools']['tools']">{{tool}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="text-gray-400 bg-gray-900 body-font" *ngIf="this.currentProjectData['our-team']">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-2xl font-medium title-font mb-4 text-white tracking-widest">OUR TEAM</h1>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2" *ngFor="let person of this.currentProjectData['our-team']['team-members']">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="No image provided" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" [src]="person.link">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-white">{{ person.name }}</h2>
+                  <h3 class="text-gray-500 mb-3">{{ person.role }}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-white">HIGHLIGHTS</span>
+          <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+        </div>
+        <div class="md:flex-grow">
+          <div class="mb-4">
+            <span class="font-semibold text-gray-300">Challenges and Solutions:</span>
+            <ul class="list-disc list-inside">
+              <li *ngFor="let item of this.currentProjectData['highlights']['challenges-solutions']">
+                <span class="font-semibold text-white">{{item.challenge}}</span>: {{item.solution}}
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span class="font-semibold text-gray-300">Achievements and Milestones:</span>
+            <div class="ml-4">
+              <div class="mb-2">
+                <span class="font-semibold text-white">Achievements:</span>
+                <ul class="list-disc list-inside">
+                  <li *ngFor="let achievement of this.currentProjectData['highlights']['achievements-milestones']['achievements']">
+                    {{achievement}}
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <span class="font-semibold text-white">Milestones:</span>
+                <ul class="list-disc list-inside">
+                  <li *ngFor="let milestone of this.currentProjectData['highlights']['achievements-milestones']['milestones']">
+                    {{milestone}}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="text-gray-400 bg-gray-900 body-font" *ngIf="this.currentProjectData['pictures']">
+          <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex w-full mb-20 flex-wrap">
+              <h3 class="sm:text-1xl text-2xl text-white lg:w-1/3 lg:mb-0 mb-4">Some photos of my work and progress:</h3>
+            </div>
+            <div class="flex flex-wrap md:-m-2 -m-1" *ngFor="let pic of this.currentProjectData['pictures']">
+              <div class="flex flex-wrap w-1/2">
+                <div class="md:p-2 p-1 w-full">
+                  <img alt="gallery" class="w-full h-full object-cover object-center block" [src]="pic">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap" *ngIf="this.currentProjectData['version-updates']">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-white">HISTORY</span>
+          <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+        </div>
+        <div class="md:flex-grow">
+          <ul><li *ngFor="let version of this.currentProjectData['version-updates']['versions']"><strong>{{version["version-date"]}}</strong><br>{{version["version-topic"]}}<br>{{version["version-description"]}}<br></li></ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+.active-link {
+    color: #f00505;
+    font-weight: bold;
+}
+
+.smaller-image {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+@media (max-width: 1000px) {
+    .smaller-image {
+        max-width: 260px;
+        max-height: 260px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .background{
+        min-height: 650px;
+    }
+}
+
+#mytitle {
+    margin-top: 100px;
+}
+
+.background {
+    background-color: transparent;
+    background-image: url('../../../assets/img/background-img/background-image-home-dark.png');
+    background-size: cover;
+    background-position: center;
+}
