@@ -23,6 +23,11 @@ export class ProjectService {
     },
   ]
   public lastTimeUpdated: string = "11 MAY 2024"
+  resultForThisSpecificProjectDataMethod: any = {}
+  resultForThisGetProjectName: string = ""
+  project: any
+  projectString: string = ""
+  scroolContent: string | undefined = undefined 
 
   constructor(
 
@@ -48,14 +53,32 @@ export class ProjectService {
     return this.projectViewArray
   }
 
-  public specificProjectData(projectString: string): any {
-    let result: any;
+  public specificProjectData(projectString: string): {} {
     Object.keys(projectData).forEach((key) => {
       const project = projectData[key as keyof typeof projectData]
       if (project && project.view && project.view['project-title'] === projectString) {
-        result = project
+        this.projectString = projectString
+        this.resultForThisSpecificProjectDataMethod = project
       }
     })
-    return result
+    return this.resultForThisSpecificProjectDataMethod
+  }
+
+  public getProjectName(): string {
+    Object.keys(projectData).forEach((key) => {
+      const project = projectData[key as keyof typeof projectData]
+      if (project && project.view && project.view['project-title'] === this.projectString) {
+        this.resultForThisGetProjectName = project.view['project-title']
+      }
+    })
+    return this.resultForThisGetProjectName
+  }
+
+  public getScollContent(): string | undefined {
+    return this.scroolContent
+  }
+
+  public setScollContent(content: string): void {
+    this.scroolContent = content
   }
 }
