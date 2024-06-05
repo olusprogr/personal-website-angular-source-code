@@ -34,7 +34,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
 
   ngOnInit(): void {
     this.currentProjectData = this.project.specificProjectData(this.name)
-    console.log(this.currentProjectData['view']['project-title'])
   }
 
   closeNot() {this.notification = false}
