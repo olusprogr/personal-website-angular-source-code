@@ -135,8 +135,8 @@
             </div>
             <div class="flex flex-wrap md:-m-2 -m-1" *ngFor="let pic of this.currentProjectData['pictures']">
               <div class="flex flex-wrap w-1/2">
-                <div class="md:p-2 p-1 w-full">
-                  <img alt="gallery" class="w-full h-full object-cover object-center block" [src]="pic">
+                <div class="md:p-2 p-1 w-full my-3">
+                  <img alt="gallery" class="w-full h-full object-cover object-center block max-h-[500px]" [src]="pic">
                 </div>
               </div>
             </div>
@@ -153,7 +153,6 @@
           <ul><li *ngFor="let version of this.currentProjectData['version-updates']['versions']"><strong>{{version["version-date"]}}</strong><br>{{version["version-topic"]}}<br>{{version["version-description"]}}<br></li></ul>
         </div>
       </div>
-
     </div>
   </div>
 </section>

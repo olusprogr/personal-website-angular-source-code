@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+  lastTimeUpdatet: string = ""
 
+  constructor(
+    private projectService: ProjectService,
+  ) {
+    this.lastTimeUpdatet = this.projectService.lastTimeUpdated
+  }
 }

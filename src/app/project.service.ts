@@ -22,7 +22,7 @@ export class ProjectService {
       img: ""
     },
   ]
-  public lastTimeUpdated: string = "11 MAY 2024"
+  public lastTimeUpdated: string = "09 JUNE 2024"
   resultForThisSpecificProjectDataMethod: any = {}
   resultForThisGetProjectName: string = ""
   project: any

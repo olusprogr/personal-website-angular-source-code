@@ -3,7 +3,8 @@
       "view": {
           "project-title": "ArchiTect Discord Bot",
           "project-description": "A fast, efficient, and user-friendly bot with numerous features for your Discord servers.",
-          "project-img": "../../../assets/img/architect-discord-bot/architect.png"
+          "project-img": "../../../assets/img/architect-discord-bot/architect.png",
+          "subtitle": "TEAM BASED"
       },
 
       "main-information": {
@@ -63,22 +64,22 @@
               {
                   "name": "Olivier",
                   "role": ["Project-owner", "Developer"],
-                  "link": "../../assets/img/project/architect/oli.webp"
+                  "link": "../../assets/img/architect-discord-bot/team/oli.webp"
               },
               {
                   "name": "David",
                   "role": ["Co-owner" ,"Developer"],
-                  "link": "../../assets/img/project/architect/david.webp"
+                  "link": "../../assets/img/architect-discord-bot/team/david.webp"
               },
               {
                   "name": "Samuel",
                   "role": "Graphic Designer",
-                  "link": "../../assets/img/project/architect/samuel.webp"
+                  "link": "../../assets/img/architect-discord-bot/team/samuel.webp"
               },
               {
                   "name": "Levi",
                   "role": "Developer",
-                  "link": "../../assets/img/project/architect/levi.webp"
+                  "link": "../../assets/img/architect-discord-bot/team/levi.webp"
               },
               {
                   "name": "Konrad",
@@ -86,8 +87,15 @@
                   "link": ""
               }
           ],
-          "discord-server": "https://discord.gg/CdSXauas"
+          "discord-server": "https://discord.gg/AW3bhJSq"
       },
+      
+      "pictures": [
+        "../../assets/img/architect-discord-bot/pics/ArchiText orig..jpg",
+        "../../assets/img/architect-discord-bot/pics/Archtietc3.jpg",
+        "../../assets/img/architect-discord-bot/pics/iukoliul.png",
+        "../../assets/img/architect-discord-bot/pics/maincode archittect.png"
+      ],
 
       "version-updates": {
           "versions": [
@@ -140,7 +148,8 @@
       "project-title": "My Portfolio",
       "project-description": "My official Portfolio to showcase all my works related to programming",
       "project-img": "../../../assets/img/my-portfolio/my-portfolio.png",
-      "project-link": "https://olusprogr.github.io/personal-website/"
+      "project-link": "https://olusprogr.github.io/personal-website/",
+      "subtitle": "PERSONAL PROJECT"
     },
   
     "main-information": {
@@ -217,15 +226,13 @@
       "project-title": "Python Banking System",
       "project-description": "Streamlined Banking System: A Python OOP and SQL Implementation.",
       "project-img": "../../../assets/img/banking-system/banking-system.png",
-      "project-link": ""
+      "subtitle": "PERSONAL PROJECT"
     },
   
     "main-information": {
       "project-name": "Python Banking System",
       "creation-date": "03. December 2023",
-      "our-team": "",
       "code-repository": "https://github.com/olusprogr/Banking-system.git",
-      "bot-invite": "",
       "total-command-functions": 12,
       "version-updates": "Current version 1.3"
     },
@@ -264,8 +271,7 @@
     "view": {
       "project-title": "Pay2drink",
       "project-description": "Pay2Drink is an Angular-based solution for beverage vending machines, allowing users to conveniently order and pay for their favorite drinks.",
-      "project-img": "",
-      "project-link": ""
+      "subtitle": "TEAM BASED"
     },
   
     "main-information": {
@@ -341,7 +347,7 @@
       "project-title": "Game Team",
       "project-description": "Game Team is a team of developers and 3d-designer who creates Counter Strike maps for the community. (In Cooperation with ArchiTect-Development)",
       "project-img": "../../../assets/img/game-team/game-team.png",
-      "project-link": ""
+      "subtitle": "TEAM BASED"
     },
   
     "main-information": {
@@ -394,17 +400,17 @@
         {
           "name": "Olivier",
           "role": "Web designer",
-          "link": "../../assets/img/project/architect/oli.webp"
+          "link": "../../assets/img/game-team/team/oli.webp"
         },
         {
           "name": "David",
           "role": "Map creator",
-          "link": "../../assets/img/project/architect/david.webp"
+          "link": "../../assets/img/game-team/team/david.webp"
         },
         {
           "name": "Samuel",
           "role": "Graphic Designer",
-          "link": "../../assets/img/project/architect/samuel.webp"
+          "link": "../../assets/img/game-team/team/samuel.webp"
         }
       ],
       "discord-server": "https://discord.gg/79Gcy8YK"
