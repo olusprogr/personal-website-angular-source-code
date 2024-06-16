@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as projectData from '../assets/json/project-template.json'
+import { ApiService } from './api.service'
+import { Observable } from 'rxjs';
 
 type projectView = {
   title: string,
@@ -13,44 +15,46 @@ type projectView = {
 })
 export class ProjectService {
 
-  projectViewArray: any[] = [];
-  projects: projectView[] = [
-    {
-      title: "",
-      description: "",
-      link: "",
-      img: ""
-    },
-  ]
-  public lastTimeUpdated: string = "09 JUNE 2024"
+  projectViewArray: projectView[] = [];
+  projects: any[] = []
+  public lastTimeUpdated: string = "16 JUNE 2024"
   resultForThisSpecificProjectDataMethod: any = {}
   resultForThisGetProjectName: string = ""
-  project: any
   projectString: string = ""
   scroolContent: string | undefined = undefined 
+  projectsFromApi: any[] = []
 
   constructor(
-
+    private ApiService: ApiService
   ) {
-    this.projects.pop()
-  
-    for (let key of Object.keys(projectData)) {
-      const value = projectData[key as keyof typeof projectData]
-  
-      if (value.view) {
-        let projectData1: any = {}
-  
-        for (let viewElementKey in value.view) {
-          projectData1[viewElementKey] = value.view[viewElementKey as keyof typeof value.view];
-        }
-        this.projects.push(projectData1)
+    this.getAllProjects()
+    setTimeout(() => {
+      for (let key of this.projects) {
+        this.projectsFromApi.push(key.data)
       }
-    }
-    this.projectViewArray = Object.values(this.projects)
+      this.createProjectViewArray()
+    }, 1000)
   }
 
-  public getProjectViews(): projectView[] {
-    return this.projectViewArray
+  private createProjectViewArray(): void {
+    this.projectViewArray = []
+    for (let i of this.projectsFromApi) {
+      this.projectViewArray.push({
+        title: i.view['project-title'],
+        description: i.view['project-description'],
+        link: i.view['project-link'],
+        img: i.view['project-img']
+      })
+    }
+    console.log(this.projectViewArray)
+  }
+
+  public getProjectViews(): projectView[] | null {
+    if (this.projectViewArray.length != 0) {
+      return this.projectViewArray
+    } else {
+      return null
+    }
   }
 
   public specificProjectData(projectString: string): {} {
@@ -80,5 +84,16 @@ export class ProjectService {
 
   public setScollContent(content: string): void {
     this.scroolContent = content
+  }
+
+  private getAllProjects(): void {
+    this.ApiService.getAllProjects().subscribe({
+      next: (data) => {
+        this.projects = data
+      },
+      error: (error) => {
+        console.error('There was an error!', error)
+    }
+  })
   }
 }

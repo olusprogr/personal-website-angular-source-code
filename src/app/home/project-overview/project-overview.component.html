@@ -11,11 +11,11 @@
       <div class="flex flex-wrap -m-4">
         <div class="xl:w-1/4 md:w-1/2 p-4" *ngFor="let project of this.projectsArray">
           <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-            <img class="h-50 rounded w-full object-cover object-center mb-6" [src]="project['project-img']" alt="content">
-            <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">{{project["subtitle"]}}</h3>
-            <h2 class="text-lg text-white font-medium title-font mb-4">{{ project["project-title"] }}</h2>
-            <p class="leading-relaxed text-base">{{ project["project-description"] }}</p>
-            <button class="flex mx-auto mt-5 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" [routerLink]="['/home/project', project['project-title']]">See More</button>
+            <img class="h-50 rounded w-full object-cover object-center mb-6" [src]="project.img" alt="content">
+            <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">{{project.subtitle}}</h3>
+            <h2 class="text-lg text-white font-medium title-font mb-4">{{ project.title }}</h2>
+            <p class="leading-relaxed text-base">{{ project.description }}</p>
+            <button class="flex mx-auto mt-5 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" [routerLink]="['/home/project', project.title]">See More</button>
           </div>
         </div>
       </div>

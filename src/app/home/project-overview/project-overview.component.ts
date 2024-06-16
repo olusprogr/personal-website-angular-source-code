@@ -16,8 +16,19 @@ import { RouterLink } from '@angular/router';
 export class ProjectOverviewComponent {
   projectsArray: any[] = [];
   constructor(
-    projectService: ProjectService
+    public projectService: ProjectService
   ) {
-    this.projectsArray = projectService.getProjectViews()
+    this.projectsArray = projectService.getProjectViews()!
+    this.requestData()
+  }
+
+  private async requestData() {
+    while (true) {
+      await new Promise(r => setTimeout(r, 500));
+      this.projectsArray = this.projectService.getProjectViews()!
+      if (this.projectsArray != null) {
+        break;
+      }
+    }
   }
 }
