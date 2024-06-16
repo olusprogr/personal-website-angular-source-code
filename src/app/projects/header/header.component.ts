@@ -21,11 +21,21 @@ export class HeaderComponent implements OnInit{
   ) { }
 
   ngOnInit(): void {
-    this.title = this.projectService.getProjectName()
+    this.checkIfProjectIsAvailable()
   }
 
-  navigateToHome(): void {
-    this.projectService.setScollContent("projects")
+  public navigateToHome(): void {
+    this.projectService.setScrollContent("projects")
     this.router.navigate(['/home'])
+  }
+
+  private async checkIfProjectIsAvailable() {
+    while (true) {
+      await new Promise(r => setTimeout(r, 1000));
+      this.title = this.projectService.getProjectName()!
+      if (this.title != "Could not load title") {
+        break;
+      }
+    }
   }
 }

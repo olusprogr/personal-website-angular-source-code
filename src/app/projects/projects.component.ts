@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
     private project: ProjectService,
     private elRef: ElementRef,
   ) {
-    this.lastTimeUpdated = project.lastTimeUpdated
+    this.lastTimeUpdated = project.getLastTimeUpdated()
   }
 
 
@@ -33,7 +33,17 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
   }
 
   ngOnInit(): void {
-    this.currentProjectData = this.project.specificProjectData(this.name)
+    this.checkIfProjectDataIsAvailable()
+  }
+
+  private async checkIfProjectDataIsAvailable() {
+    while (true) {
+      await new Promise(r => setTimeout(r, 1000));
+      this.currentProjectData = this.project.specificProjectData(this.name)
+      if (this.currentProjectData != null) {
+        break;
+      }
+    }
   }
 
   closeNot() {this.notification = false}

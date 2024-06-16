@@ -1,99 +1,68 @@
 import { Injectable } from '@angular/core';
-import * as projectData from '../assets/json/project-template.json'
-import { ApiService } from './api.service'
-import { Observable } from 'rxjs';
-
-type projectView = {
-  title: string,
-  description: string,
-  link: string
-  img: string
-}
+import { ApiService } from './api.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectService {
 
-  projectViewArray: projectView[] = [];
-  projects: any[] = []
-  public lastTimeUpdated: string = "16 JUNE 2024"
-  resultForThisSpecificProjectDataMethod: any = {}
-  resultForThisGetProjectName: string = ""
-  projectString: string = ""
-  scroolContent: string | undefined = undefined 
-  projectsFromApi: any[] = []
+  private projectsFromApi: any[] = [];
+  private projectViewArray: any[] = []; // Adjust type based on your actual project view structure
+  private currentProjectName: string = "No Project Selected";
+  private scroolContent: string | undefined = undefined; // Corrected typo in variable name
 
-  constructor(
-    private ApiService: ApiService
-  ) {
-    this.getAllProjects()
-    setTimeout(() => {
-      for (let key of this.projects) {
-        this.projectsFromApi.push(key.data)
-      }
-      this.createProjectViewArray()
-    }, 1000)
-  }
-
-  private createProjectViewArray(): void {
-    this.projectViewArray = []
-    for (let i of this.projectsFromApi) {
-      this.projectViewArray.push({
-        title: i.view['project-title'],
-        description: i.view['project-description'],
-        link: i.view['project-link'],
-        img: i.view['project-img']
-      })
-    }
-    console.log(this.projectViewArray)
-  }
-
-  public getProjectViews(): projectView[] | null {
-    if (this.projectViewArray.length != 0) {
-      return this.projectViewArray
-    } else {
-      return null
-    }
-  }
-
-  public specificProjectData(projectString: string): {} {
-    Object.keys(projectData).forEach((key) => {
-      const project = projectData[key as keyof typeof projectData]
-      if (project && project.view && project.view['project-title'] === projectString) {
-        this.projectString = projectString
-        this.resultForThisSpecificProjectDataMethod = project
-      }
-    })
-    return this.resultForThisSpecificProjectDataMethod
-  }
-
-  public getProjectName(): string {
-    Object.keys(projectData).forEach((key) => {
-      const project = projectData[key as keyof typeof projectData]
-      if (project && project.view && project.view['project-title'] === this.projectString) {
-        this.resultForThisGetProjectName = project.view['project-title']
-      }
-    })
-    return this.resultForThisGetProjectName
-  }
-
-  public getScollContent(): string | undefined {
-    return this.scroolContent
-  }
-
-  public setScollContent(content: string): void {
-    this.scroolContent = content
+  constructor(private apiService: ApiService) {
+    this.getAllProjects();
   }
 
   private getAllProjects(): void {
-    this.ApiService.getAllProjects().subscribe({
+    this.apiService.getAllProjects().subscribe({
       next: (data) => {
-        this.projects = data
+        this.projectsFromApi = data.map((project: any) => project.data);
+        this.createProjectViewArray();
       },
       error: (error) => {
-        console.error('There was an error!', error)
+        console.error('Error fetching projects!', error);
+      }
+    });
+  }
+
+  private createProjectViewArray(): void {
+    this.projectViewArray = this.projectsFromApi.map((project: any) => ({
+      title: project.view['project-title'],
+      description: project.view['project-description'],
+      link: project.view['project-link'],
+      img: project.view['project-img']
+    }));
+  }
+
+  public getProjectViews(): any[] | null {
+    return this.projectViewArray.length > 0 ? this.projectViewArray : null;
+  }
+
+  public specificProjectData(projectString: string): any | null {
+    const project = this.projectsFromApi.find((p: any) => p.view['project-title'] === projectString);
+    if (project) {
+      this.currentProjectName = project.view['project-title'];
+      return project;
     }
-  })
+    return null;
+  }
+
+  public getProjectName(): string | null {
+    const project = this.projectsFromApi.find((p: any) => p.view['project-title'] === this.currentProjectName);
+    return project ? project.view['project-title'] : null;
+  }
+
+  public getScrollContent(): string | undefined {
+    return this.scroolContent;
+  }
+
+  public setScrollContent(content: string): void {
+    this.scroolContent = content;
+  }
+
+  public getLastTimeUpdated(): string {
+    return "16 JUNE 2024"; // Moved this to a method for consistency
   }
 }

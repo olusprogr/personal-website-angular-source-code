@@ -44,7 +44,7 @@ export class HomeComponent implements AfterViewInit {
     private project: ProjectService,
     private scrollService: ScrollService
   ) {
-    this.elementToScrollTo = this.project.getScollContent()
+    this.elementToScrollTo = this.project.getScrollContent()
   }
 
   public scrollToTarget(target: string): void {

@@ -14,6 +14,6 @@ export class FooterComponent {
   constructor(
     private projectService: ProjectService,
   ) {
-    this.lastTimeUpdatet = this.projectService.lastTimeUpdated
+    this.lastTimeUpdatet = this.projectService.getLastTimeUpdated()
   }
 }
