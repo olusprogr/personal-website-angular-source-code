@@ -7,9 +7,9 @@ import { ApiService } from './api.service';
 export class ProjectService {
 
   private projectsFromApi: any[] = [];
-  private projectViewArray: any[] = []; // Adjust type based on your actual project view structure
+  private projectViewArray: any[] = [];
   private currentProjectName: string = "No Project Selected";
-  private scroolContent: string | undefined = undefined; // Corrected typo in variable name
+  private scroolContent: string | undefined = undefined;
 
   constructor(private apiService: ApiService) {
     this.getAllProjects();
@@ -63,6 +63,6 @@ export class ProjectService {
   }
 
   public getLastTimeUpdated(): string {
-    return "16 JUNE 2024"; // Moved this to a method for consistency
+    return "16 JUNE 2024";
   }
 }

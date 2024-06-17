@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectsComponent implements OnInit, AfterViewInit{
   @Input() name: string = ''
-  currentProjectData: any = {}
+  currentProjectData: any = undefined
   notification: boolean = true
   lastTimeUpdated: string = "Error"
 
