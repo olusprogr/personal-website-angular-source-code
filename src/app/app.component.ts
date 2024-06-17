@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
-import { ApiService } from './api.service';
 import { CommonModule } from '@angular/common';
+import { ProjectService } from './project.service';
 
 @Component({
   selector: 'app-root',
@@ -18,14 +18,22 @@ import { CommonModule } from '@angular/common';
 export class AppComponent implements OnInit{
   title = 'website';
   message: string = '';
-  isLoading: boolean = false;
+  isLoading: boolean = true;
 
-  constructor(private apiService: ApiService) {}
+  constructor(private project: ProjectService) {}
 
   ngOnInit() {
-    // this.apiService.getMessages().subscribe(
-    //   (data: string) => this.message = data,
-    //   (error: any) => console.log(error)
-    // );
+    this.checkIfProjectDataIsAvailable()
   }
+
+  private async checkIfProjectDataIsAvailable() {
+    while (true) {
+      await new Promise(r => setTimeout(r, 1000));
+      const asw = this.project.checkIfDataIsAvailable()
+      if (asw === true) {
+        this.isLoading = false;
+      }
+    }
+  }
+
 }

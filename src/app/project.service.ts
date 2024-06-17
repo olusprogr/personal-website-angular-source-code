@@ -8,21 +8,21 @@ export class ProjectService {
 
   private projectsFromApi: any[] = [];
   private projectViewArray: any[] = [];
-  private currentProjectName: string = "No Project Selected";
-  private scroolContent: string | undefined = undefined;
+  private currentProjectName: string = "No Project Selected"
+  private scroolContent: string | undefined = undefined
 
   constructor(private apiService: ApiService) {
-    this.getAllProjects();
+    this.getAllProjects()
   }
 
   private getAllProjects(): void {
     this.apiService.getAllProjects().subscribe({
       next: (data) => {
-        this.projectsFromApi = data.map((project: any) => project.data);
+        this.projectsFromApi = data.map((project: any) => project.data)
         this.createProjectViewArray();
       },
       error: (error) => {
-        console.error('Error fetching projects!', error);
+        console.error('Error fetching projects!', error)
       }
     });
   }
@@ -43,26 +43,34 @@ export class ProjectService {
   public specificProjectData(projectString: string): any | null {
     const project = this.projectsFromApi.find((p: any) => p.view['project-title'] === projectString);
     if (project) {
-      this.currentProjectName = project.view['project-title'];
-      return project;
+      this.currentProjectName = project.view['project-title']
+      return project
     }
-    return null;
+    return null
   }
 
   public getProjectName(): string | null {
     const project = this.projectsFromApi.find((p: any) => p.view['project-title'] === this.currentProjectName);
-    return project ? project.view['project-title'] : null;
+    return project ? project.view['project-title'] : null
   }
 
   public getScrollContent(): string | undefined {
-    return this.scroolContent;
+    return this.scroolContent
   }
 
   public setScrollContent(content: string): void {
-    this.scroolContent = content;
+    this.scroolContent = content
   }
 
   public getLastTimeUpdated(): string {
-    return "16 JUNE 2024";
+    return "16 JUNE 2024"
+  }
+
+  public checkIfDataIsAvailable(): boolean {
+    if (this.projectsFromApi != undefined || this.projectsFromApi != null) {
+      return true
+    } else {
+      return false
+    }
   }
 }
