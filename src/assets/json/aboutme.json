@@ -1,7 +1,7 @@
 [
   {
     "title": "My Journey",
-    "description": "In the beginning, it was a challenge – the code looked like a complicated mix of letters and symbols. I remember spending hours watching programming tutorials to learn the basics. One day, I stumbled upon the fascinating world of GUI programming with the Tkinter library. It was a breakthrough! Suddenly, I could create my own user interfaces and bring my creative ideas to life. One of my early projects was crafting a food ordering menu like the one at my school. With Tkinter, I could design interactive menus and implement ordering processes. Since then, I've steadily expanded my knowledge and worked on various projects.\n\nProgramming, for me, is a constant journey of discovery, and I look forward to realizing many exciting projects ahead.",
+    "description": "In the beginning, it was a challenge. The code looked like a complicated mix of letters and symbols. I remember spending hours watching programming tutorials to learn the basics. One day, I stumbled upon the concept of GUI programming with the Tkinter library in Python. It was a breakthrough! Suddenly, I could create my own user interfaces and bring my creative ideas to life. One of my early projects was programming a food ordering menu like the one at my school. With Tkinter, I could design interactive menus and implement ordering processes. Since then, I've expanded my knowledge and worked on various projects.\n\nProgramming, for me, is a constant journey of discovery, and I look forward to realizing many exciting projects ahead.",
     "subTitle": "Currently diving deep into Web Development and APIs.",
     "subDescription": "Now, let me take you through some of these projects..."
   },
@@ -13,7 +13,7 @@
   },
   {
     "title": "Skills I have Learned",
-    "description": "Over the last three years, I've learned Python, diving into object-oriented programming, Tkinter, Pycord, and Sqlite. I've also spent a year getting familiar with JavaScript and Angular, covering basics and Angular materials. Plus, I've been using RaspiOS (Linux) for over a year, hosting my Discord bot and managing tasks with Crontab. Recently, I've been exploring Fast API, dedicating a month to grasp its basics.",
+    "description": "Over the last three years, I've learned Python, diving into object-oriented programming, Tkinter, Pycord, and Sqlite. I've also spent a year getting familiar with TypeScript (JS) and Angular, covering basics and Angular materials. Plus, I've been using RaspiOS (Linux) for a year, hosting my Discord bot and managing tasks with Crontab. Recently, I've been exploring API development (fastAPI, ExpressJS), dedicating a month to grasp its basics.",
     "subTitle": "Continuous learning with tools, frameworks, and technologies...",
     "subDescription": ""
   }
