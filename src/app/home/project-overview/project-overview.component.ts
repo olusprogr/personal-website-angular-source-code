@@ -8,13 +8,16 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [
     CommonModule,
-    RouterLink
+    RouterLink,
+    CommonModule
   ],
   templateUrl: './project-overview.component.html',
   styleUrl: './project-overview.component.css'
 })
 export class ProjectOverviewComponent {
-  projectsArray: any[] = [];
+  projectsArray: any[] = []
+  isLoaded: boolean = false
+
   constructor(
     public projectService: ProjectService
   ) {
@@ -24,10 +27,11 @@ export class ProjectOverviewComponent {
 
   private async requestData() {
     while (true) {
-      await new Promise(r => setTimeout(r, 500));
+      await new Promise(r => setTimeout(r, 500))
       this.projectsArray = this.projectService.getProjectViews()!
       if (this.projectsArray != null) {
-        break;
+        this.isLoaded = true
+        break
       }
     }
   }
