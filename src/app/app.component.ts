@@ -30,7 +30,7 @@ export class AppComponent implements OnInit{
     while (true) {
       await new Promise(r => setTimeout(r, 1000));
       const asw = this.project.checkIfDataIsAvailable()
-      console.log(asw)
+      // console.log(asw)
       if (asw === true) {
         this.isLoading = false;
         break
