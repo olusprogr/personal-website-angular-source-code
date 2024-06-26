@@ -8,8 +8,8 @@ export class ProjectService {
 
   private projectsFromApi: any[] = [];
   private projectViewArray: any[] = [];
-  private currentProjectName: string = "No Project Selected"
-  private scroolContent: string | undefined = undefined
+  private currentProjectName: string = "No Project Selected";
+  private scroolContent: string | undefined = undefined;
 
   constructor(private apiService: ApiService) {
     this.getAllProjects()
