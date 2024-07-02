@@ -27,7 +27,7 @@ export class ProjectOverviewComponent {
 
   private async requestData() {
     while (true) {
-      await new Promise(r => setTimeout(r, 500))
+      await new Promise(r => setTimeout(r, 100))
       this.projectsArray = this.projectService.getProjectViews()!
       if (this.projectsArray != null) {
         this.isLoaded = true

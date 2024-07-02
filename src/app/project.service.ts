@@ -12,28 +12,44 @@ export class ProjectService {
   private scroolContent: string | undefined = undefined;
 
   constructor(private apiService: ApiService) {
-    this.getAllProjects()
+    this.runGetAllProjectsMethodEveryXMilliseconds();
+  }
+
+  private async runGetAllProjectsMethodEveryXMilliseconds(): Promise<void> {
+    while (true) {
+      await new Promise(r => setTimeout(r, 100))
+      this.getAllProjects()
+      if (this.projectsFromApi != undefined || this.projectsFromApi != null) {
+        break
+      }
+    }
   }
 
   private getAllProjects(): void {
     this.apiService.getAllProjects().subscribe({
       next: (data) => {
-        this.projectsFromApi = data.map((project: any) => project.data)
+        this.projectsFromApi = data.map((project: any) => project.data);
+        console.log(this.projectsFromApi)
         this.createProjectViewArray();
       },
       error: (error) => {
-        console.error('Error fetching projects!', error)
+        console.error('Error fetching projects!', error);
       }
     });
   }
 
   private createProjectViewArray(): void {
+    this.projectViewArray = this.projectViewArray.filter(item => item !== undefined);
+    console.log(this.projectsFromApi)
+
+
     this.projectViewArray = this.projectsFromApi.map((project: any) => ({
       title: project.view['project-title'],
       description: project.view['project-description'],
       link: project.view['project-link'],
       img: project.view['project-img']
     }));
+    console.log(this.projectViewArray)
   }
 
   public getProjectViews(): any[] | null {

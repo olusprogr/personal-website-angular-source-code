@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
 })
 export class ApiService implements OnInit{
   private baseUrl = 'https://my-project-api-cgm7.onrender.com/api/portfolio/'
+  private secondUrl = 'localhost:3000/api/portfolio/'
 
   constructor(
     private http: HttpClient
   ) {
   }
-  notes: any = [];
 
   public getAllProjects(): Observable<any[]> {
     return this.http.get<any[]>(this.baseUrl + 'getProjects');
