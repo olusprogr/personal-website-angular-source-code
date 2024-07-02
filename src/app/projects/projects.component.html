@@ -43,7 +43,6 @@
         <div class="py-8 flex flex-wrap md:flex-nowrap">
           <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
             <span class="font-semibold title-font text-white">MAIN INFORMATION</span>
-            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
           </div>
           <div class="md:flex-grow">
             <h6><strong>Project name: </strong>{{this.currentProjectData["main-information"]["project-name"]}}<br></h6>
@@ -60,7 +59,6 @@
         <div class="py-8 flex flex-wrap md:flex-nowrap">
           <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
             <span class="font-semibold title-font text-white">TECHNOLOGIES AND TOOLS</span>
-            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
           </div>
           <div style="display: flex; justify-content: center;">
             <div class="mx-4">
@@ -100,7 +98,6 @@
         <div class="py-8 flex flex-wrap md:flex-nowrap">
           <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
             <span class="font-semibold title-font text-white">HIGHLIGHTS</span>
-            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
           </div>
           <div class="md:flex-grow">
             <div class="mb-4">
@@ -152,7 +149,6 @@
         <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap" *ngIf="this.currentProjectData['version-updates']">
           <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
             <span class="font-semibold title-font text-white">HISTORY</span>
-            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
           </div>
           <div class="md:flex-grow">
             <ul><li *ngFor="let version of this.currentProjectData['version-updates']['versions']"><strong>{{version["version-date"]}}</strong><br>{{version["version-topic"]}}<br>{{version["version-description"]}}<br></li></ul>
