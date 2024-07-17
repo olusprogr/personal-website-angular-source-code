@@ -34,7 +34,6 @@ type projects = {
 })
 export class HomeComponent implements AfterViewInit {
   elementToScrollTo: string | undefined
-
   projectsArray: any[] = []
   projects: projects[] = [] // edited
   message: string = ''

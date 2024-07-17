@@ -5,7 +5,6 @@ import { ApiService } from './api.service';
   providedIn: 'root'
 })
 export class ProjectService {
-
   private projectsFromApi: any[] = [];
   private projectViewArray: any[] = [];
   private currentProjectName: string = "No Project Selected";
@@ -17,11 +16,9 @@ export class ProjectService {
 
   private async runGetAllProjectsMethodEveryXMilliseconds(): Promise<void> {
     while (true) {
-      await new Promise(r => setTimeout(r, 100))
+      await new Promise(r => setTimeout(r, 500))
       this.getAllProjects()
-      if (this.projectsFromApi != undefined || this.projectsFromApi != null) {
-        break
-      }
+      if (this.projectsFromApi.length > 0) {break}
     }
   }
 
@@ -29,7 +26,6 @@ export class ProjectService {
     this.apiService.getAllProjects().subscribe({
       next: (data) => {
         this.projectsFromApi = data.map((project: any) => project.data);
-        console.log(this.projectsFromApi)
         this.createProjectViewArray();
       },
       error: (error) => {
@@ -40,8 +36,6 @@ export class ProjectService {
 
   private createProjectViewArray(): void {
     this.projectViewArray = this.projectViewArray.filter(item => item !== undefined);
-    console.log(this.projectsFromApi)
-
 
     this.projectViewArray = this.projectsFromApi.map((project: any) => ({
       title: project.view['project-title'],
@@ -49,7 +43,6 @@ export class ProjectService {
       link: project.view['project-link'],
       img: project.view['project-img']
     }));
-    console.log(this.projectViewArray)
   }
 
   public getProjectViews(): any[] | null {

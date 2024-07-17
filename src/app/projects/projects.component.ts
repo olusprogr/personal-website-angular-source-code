@@ -24,6 +24,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
     private elRef: ElementRef,
   ) {
     this.lastTimeUpdated = project.getLastTimeUpdated()
+    this.checkIfProjectDataIsAvailable()
   }
 
 
@@ -40,9 +41,8 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
     while (true) {
       await new Promise(r => setTimeout(r, 1000));
       this.currentProjectData = this.project.specificProjectData(this.name)
-      if (this.currentProjectData != null) {
-        break;
-      }
+
+      if (this.currentProjectData !== undefined) {break}
     }
   }
 
