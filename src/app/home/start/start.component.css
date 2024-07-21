@@ -4,8 +4,8 @@
 }
 
 .smaller-image {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 @media (max-width: 1000px) {
@@ -19,6 +19,8 @@
     .background{
         min-height: 650px;
     }
+
+
 }
 
 @media (min-width: 1000px) {
@@ -28,6 +30,11 @@
 
     .container {
         margin-left: 100px;
+    }
+
+    .smaller-image {
+        max-width: 350px;
+        max-height: 350px;
     }
 }
 
