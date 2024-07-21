@@ -21,6 +21,16 @@
     }
 }
 
+@media (min-width: 1000px) {
+    .img-con {
+        margin-left: 50px;
+    }
+
+    .container {
+        margin-left: 100px;
+    }
+}
+
 #mytitle {
     margin-top: 100px;
 }
