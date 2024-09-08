@@ -2,18 +2,18 @@
   {
     "title": "My Journey",
     "description": "In the beginning, it was a challenge. The code looked like a complicated mix of letters and symbols. I remember spending hours watching programming tutorials to learn the basics. One day, I stumbled upon the concept of GUI programming with the Tkinter library in Python. It was a breakthrough! Suddenly, I could create my own user interfaces and bring my creative ideas to life. One of my early projects was programming a food ordering menu like the one at my school. With Tkinter, I could design interactive menus and implement ordering processes. Since then, I've expanded my knowledge and worked on various projects.\n\nProgramming, for me, is a constant journey of discovery, and I look forward to realizing many exciting projects ahead.",
-    "subTitle": "Currently diving deep into Web Development and APIs.",
-    "subDescription": "Now, let me take you through some of these projects..."
+    "subTitle": "Currently diving deep into Linux Server Management and API Development.",
+    "subDescription": "Now, let me take you through some of my projects..."
   },
   {
     "title": "My Experience",
-    "description": "I bring 3 years of experience to the table, particularly in the realm of Python for the back-end and JavaScript for the front-end. My expertise lies in GUI development and Object-Oriented Programming (OOP). While I am still in the early stages of my web development journey, I am already proficient in coding entire pages using Angular. Additionally, I have a foundational understanding of C++ from my school days, where I learned it at a basic level. I approach my work with dedication and a commitment to continuous learning, always striving to enhance my skills and explore new horizons in programming.",
+    "description": "I bring 3 years of experience to the table, particularly in the realm of JavaScript for the front-end and back-end and python for the back-end. My expertise lies in API development and Object-Oriented Programming (OOP). While I am still in the early stages of my web development journey, I am already proficient in coding entire pages using Angular/TypeScript and hosting it on an Virtual Machine (VM) on AWS. Additionally, I have a foundational understanding of C++ and Java from my school days, where I learned it at a basic level. I approach my work with dedication and a commitment to a planed step-by-step learning, always striving to enhance my skills and explore new possibilities in programming.",
     "subTitle": "Writing code since I was 13 years old.",
     "subDescription": ""
   },
   {
     "title": "Skills I have Learned",
-    "description": "Over the last three years, I've learned Python, diving into object-oriented programming, Tkinter, Pycord, and Sqlite. I've also spent a year getting familiar with TypeScript (JS) and Angular, covering basics and Angular materials. Plus, I've been using RaspiOS (Linux) for a year, hosting my Discord bot and managing tasks with Crontab. Recently, I've been exploring API development (fastAPI, ExpressJS), dedicating a month to grasp its basics.",
+    "description": "Over the last three years, I've learned Python, diving into object-oriented programming, Tkinter, Pycord, and Sqlite DB. I've also spent a year getting familiar with TypeScript (JS) and Angular and Angular materials. Plus, I've been using RaspiOS (Linux) for a year, hosting my Discord bot and managing tasks with Crontab on a virtual machine on AWS. Recently, I've been exploring API development (ExpressJS).",
     "subTitle": "Continuous learning with tools, frameworks, and technologies...",
     "subDescription": ""
   }

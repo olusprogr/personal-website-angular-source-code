@@ -72,7 +72,7 @@ export class ProjectService {
   }
 
   public getLastTimeUpdated(): string {
-    return "10. AUGUST 2024"
+    return "08. September 2024"
   }
 
   public checkIfDataIsAvailable(): boolean {
