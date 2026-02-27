@@ -26,6 +26,7 @@ export class ProjectService {
     this.apiService.getAllProjects().subscribe({
       next: (data) => {
         this.projectsFromApi = data.map((project: any) => project.data);
+        console.log('Projects fetched successfully:', this.projectsFromApi);
         this.createProjectViewArray();
       },
       error: (error) => {
@@ -76,10 +77,6 @@ export class ProjectService {
   }
 
   public checkIfDataIsAvailable(): boolean {
-    if (this.projectsFromApi != undefined || this.projectsFromApi != null) {
-      return true
-    } else {
-      return false
-    }
+    return this.projectsFromApi.length > 0
   }
 }

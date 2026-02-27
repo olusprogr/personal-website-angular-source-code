@@ -1,8 +1,6 @@
 <app-header id="header"></app-header>
 
-<div *ngIf="!this.currentProjectData" class="bg-gray-900 d-flex justify-center py-28">
-  <h1 class="text-slate-100 text-xl">DATA IS LOADING...</h1>
-</div>
+
 
 <div *ngIf="this.currentProjectData">
   <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-200 px-6 py-2.5 sm:px-3.5 sm:before:flex-1" *ngIf="this.notification == true">

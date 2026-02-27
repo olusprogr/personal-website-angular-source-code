@@ -1,11 +1,6 @@
-<div [class.blurred]="this.isLoading">
+<div>
     <router-outlet></router-outlet>
 </div>
 <app-footer></app-footer>
-
-<div *ngIf="this.isLoading" class="loading-overlay">
-    Data is loading...
-</div>
-
 
   

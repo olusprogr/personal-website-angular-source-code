@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ProjectService } from '../../project.service';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -14,23 +14,27 @@ import { RouterLink } from '@angular/router';
   templateUrl: './project-overview.component.html',
   styleUrl: './project-overview.component.css'
 })
-export class ProjectOverviewComponent {
+export class ProjectOverviewComponent implements OnInit {
   projectsArray: any[] = []
   isLoaded: boolean = false
 
   constructor(
-    public projectService: ProjectService
-  ) {
-    this.projectsArray = projectService.getProjectViews()!
+    public projectService: ProjectService,
+    private cdr: ChangeDetectorRef
+  ) {}
+
+  ngOnInit(): void {
     this.requestData()
   }
 
   private async requestData() {
     while (true) {
       await new Promise(r => setTimeout(r, 100))
-      this.projectsArray = this.projectService.getProjectViews()!
-      if (this.projectsArray != null) {
+      const views = this.projectService.getProjectViews()
+      if (views != null) {
+        this.projectsArray = views
         this.isLoaded = true
+        this.cdr.detectChanges()
         break
       }
     }

@@ -41,8 +41,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
     while (true) {
       await new Promise(r => setTimeout(r, 1000));
       this.currentProjectData = this.project.specificProjectData(this.name)
+      console.log('Checking for project data:', this.currentProjectData);
 
-      if (this.currentProjectData !== undefined) {break}
+      if (this.currentProjectData) {break}
     }
   }
 

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const p = require\\(''./node_modules/@angular/common/package.json''\\); console.log\\(JSON.stringify\\(Object.keys\\(p.exports || {}\\), null, 2\\)\\)\")",
+      "Bash(node_modules/.bin/ng version)",
+      "Bash(node_modules/.bin/ng build --configuration development)",
+      "Bash(node_modules/.bin/ng build)"
+    ]
+  }
+}
