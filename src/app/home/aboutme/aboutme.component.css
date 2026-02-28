@@ -1,7 +1,69 @@
 .aboutme-section {
-  background: #111827;
+  background: #f8f9fc;
   padding: 100px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutme-section::before {
+  content: '';
+  position: absolute;
+  top: -15%;
+  left: -5%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.14) 0%, rgba(99, 102, 241, 0.04) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 10s ease-in-out infinite;
+}
+
+.aboutme-section::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  right: -3%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, rgba(139, 92, 246, 0.04) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+.aboutme-decor-1 {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgba(99, 102, 241, 0.1);
+  border-radius: 24px;
+  pointer-events: none;
+  transform: rotate(30deg);
+  animation: spin-slow 30s linear infinite;
+}
+
+.aboutme-decor-2 {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  width: 160px;
+  height: 160px;
+  border: 2px solid rgba(139, 92, 246, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 11s ease-in-out infinite 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(390deg); }
 }
 
 .aboutme-inner {
@@ -11,6 +73,8 @@
   display: flex;
   align-items: center;
   gap: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .aboutme-image-wrap {
@@ -22,19 +86,25 @@
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 20px 50px rgba(99, 102, 241, 0.08), 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s;
+}
+
+.aboutme-image:hover {
+  transform: scale(1.02) rotate(1deg);
+  box-shadow: 0 25px 60px rgba(99, 102, 241, 0.14), 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .section-badge {
   display: inline-flex;
   padding: 4px 14px;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.22);
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
   border-radius: 100px;
   font-size: 11px;
   font-weight: 700;
-  color: #818cf8;
+  color: #6366f1;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -43,7 +113,7 @@
 .aboutme-title {
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   font-weight: 700;
-  color: #f1f5f9;
+  color: #1a1a2e;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -51,14 +121,14 @@
 
 .aboutme-text {
   font-size: 15px;
-  color: #94a3b8;
+  color: #64748b;
   line-height: 1.8;
   margin-bottom: 12px;
 }
 
 .aboutme-subtext {
   font-size: 15px;
-  color: #64748b;
+  color: #94a3b8;
   line-height: 1.8;
   margin-bottom: 32px;
 }
@@ -71,21 +141,53 @@
 
 .tab-btn {
   padding: 10px 22px;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.22);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 10px;
-  color: #a5b4fc;
+  color: #64748b;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .tab-btn:hover {
-  background: rgba(99, 102, 241, 0.22);
-  border-color: rgba(99, 102, 241, 0.5);
+  background: #6366f1;
+  border-color: #6366f1;
   color: #fff;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.reveal-left {
+  transform: translateX(-60px);
+}
+
+.reveal.reveal-right {
+  transform: translateX(60px);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-child {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-child.revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 900px) {

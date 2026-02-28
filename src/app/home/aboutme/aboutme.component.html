@@ -1,15 +1,17 @@
 
 <section id="aboutme" class="aboutme-section">
+  <div class="aboutme-decor-1"></div>
+  <div class="aboutme-decor-2"></div>
   <div class="aboutme-inner">
-    <div class="aboutme-image-wrap">
+    <div class="aboutme-image-wrap reveal reveal-left" [class.revealed]="isRevealed">
       <img class="aboutme-image" alt="Olivier Chodura" src="../../../assets/img/img-of-me/2.jpeg">
     </div>
-    <div class="aboutme-content">
-      <div class="section-badge">About Me</div>
-      <h1 class="aboutme-title">{{ this.toggledAboutMe.title }}</h1>
-      <p class="aboutme-text">{{ this.toggledAboutMe.description }}</p>
-      <p class="aboutme-subtext">{{ this.toggledAboutMe.subTitle }}</p>
-      <div class="aboutme-buttons">
+    <div class="aboutme-content reveal reveal-right" [class.revealed]="isRevealed">
+      <div class="section-badge reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.15s">About Me</div>
+      <h1 class="aboutme-title reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.25s">{{ this.toggledAboutMe.title }}</h1>
+      <p class="aboutme-text reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.35s">{{ this.toggledAboutMe.description }}</p>
+      <p class="aboutme-subtext reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.45s">{{ this.toggledAboutMe.subTitle }}</p>
+      <div class="aboutme-buttons reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.55s">
         <button class="tab-btn" (click)="changeText('My Journey')">My Journey</button>
         <button class="tab-btn" (click)='changeText("Skills I have Learned")'>Skills</button>
         <button class="tab-btn" (click)="changeText('My Experience')">Experience</button>

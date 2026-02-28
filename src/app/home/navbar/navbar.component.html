@@ -9,10 +9,10 @@
       <span class="brand-name">My Portfolio</span>
     </a>
     <nav class="nav-links" [class.open]="menuOpen">
-      <a class="nav-link" (click)="scrollToTarget('home')">Home</a>
-      <a class="nav-link" (click)="scrollToTarget('aboutme')">About Me</a>
-      <a class="nav-link" (click)="scrollToTarget('projects')">Projects</a>
-      <a class="nav-link" (click)="scrollToTarget('footer')">Contact</a>
+      <a class="nav-link" [class.active]="activeSection === 'home'" (click)="scrollToTarget('home')">Home</a>
+      <a class="nav-link" [class.active]="activeSection === 'aboutme'" (click)="scrollToTarget('aboutme')">About Me</a>
+      <a class="nav-link" [class.active]="activeSection === 'projects'" (click)="scrollToTarget('projects')">Projects</a>
+      <a class="nav-link" [class.active]="activeSection === 'footer'" (click)="scrollToTarget('footer')">Contact</a>
     </nav>
     <div class="owner-name">Olivier Chodura</div>
     <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen">
@@ -20,5 +20,8 @@
       <span></span>
       <span></span>
     </button>
+  </div>
+  <div class="scroll-progress-track">
+    <div class="scroll-progress-bar" [style.width.%]="scrollProgress"></div>
   </div>
 </header>

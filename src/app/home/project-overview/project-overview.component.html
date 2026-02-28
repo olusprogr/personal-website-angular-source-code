@@ -4,17 +4,20 @@
 </div>
 
 <section id="projects" class="projects-section">
+  <div class="projects-decor-1"></div>
+  <div class="projects-decor-2"></div>
+  <div class="projects-decor-3"></div>
   <div class="projects-inner">
-    <div class="section-header">
+    <div class="section-header reveal reveal-up" [class.revealed]="isSectionRevealed">
       <div>
         <div class="section-badge">Portfolio</div>
         <h1 class="section-title">My best Projects</h1>
         <div class="title-bar"></div>
       </div>
-      <p class="section-desc text-gray-50">The following provided projects represent my knowledge and experience in programming.</p>
+      <p class="section-desc">The following provided projects represent my knowledge and experience in programming.</p>
     </div>
     <div class="projects-grid">
-      <div class="project-card" *ngFor="let project of this.projectsArray">
+      <div class="project-card reveal reveal-up" [class.revealed]="isSectionRevealed" *ngFor="let project of this.projectsArray; let i = index" [style.transition-delay.ms]="200 + i * 120">
         <div class="card-image-wrap">
           <img class="card-image" [src]="project.img" alt="content">
         </div>
