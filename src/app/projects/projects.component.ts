@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Input, OnInit, ElementRef } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, Input, OnInit, ElementRef } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { ProjectService } from '../project.service';
 import { CommonModule } from '@angular/common';
@@ -22,9 +22,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
   constructor(
     private project: ProjectService,
     private elRef: ElementRef,
+    private cdr: ChangeDetectorRef,
   ) {
     this.lastTimeUpdated = project.getLastTimeUpdated()
-    this.checkIfProjectDataIsAvailable()
   }
 
 
@@ -39,11 +39,13 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
 
   private async checkIfProjectDataIsAvailable() {
     while (true) {
-      await new Promise(r => setTimeout(r, 1000));
+      await new Promise(r => setTimeout(r, 200));
       this.currentProjectData = this.project.specificProjectData(this.name)
-      console.log('Checking for project data:', this.currentProjectData);
 
-      if (this.currentProjectData) {break}
+      if (this.currentProjectData) {
+        this.cdr.detectChanges()
+        break
+      }
     }
   }
 

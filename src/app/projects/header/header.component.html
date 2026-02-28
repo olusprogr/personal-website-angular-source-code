@@ -1,15 +1,19 @@
 
-
-<header class="text-gray-400 bg-gray-900 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+<header class="project-header">
+  <div class="project-header-inner">
+    <a class="header-brand">
+      <div class="header-brand-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-        </svg>      
-        <span class="ml-3 text-xl">{{ this.title || "No project selected. Navigate back to home to select a project." }}</span>
+        </svg>
+      </div>
+      <span class="header-title">{{ this.title || "No project selected. Navigate back to home to select a project." }}</span>
+    </a>
+    <nav class="header-nav">
+      <a class="header-nav-link" (click)="navigateToHome()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Home
       </a>
-      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-white" (click)="navigateToHome()">HOME</a>
-      </nav>
-    </div>
-  </header>
+    </nav>
+  </div>
+</header>

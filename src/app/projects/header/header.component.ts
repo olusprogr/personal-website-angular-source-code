@@ -31,7 +31,8 @@ export class HeaderComponent implements OnInit{
     while (true) {
       await new Promise(r => setTimeout(r, 1000));
       this.title = this.projectService.getProjectName()!
-      if (this.title != "Could not load title") {
+      console.log(this.title)
+      if (this.title) {
         break;
       }
     }

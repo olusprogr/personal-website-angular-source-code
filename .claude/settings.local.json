@@ -4,7 +4,9 @@
       "Bash(node -e \"const p = require\\(''./node_modules/@angular/common/package.json''\\); console.log\\(JSON.stringify\\(Object.keys\\(p.exports || {}\\), null, 2\\)\\)\")",
       "Bash(node_modules/.bin/ng version)",
       "Bash(node_modules/.bin/ng build --configuration development)",
-      "Bash(node_modules/.bin/ng build)"
+      "Bash(node_modules/.bin/ng build)",
+      "Bash(curl -s \"https://my-project-api-cgm7.onrender.com/api/portfolio/getProjects\")",
+      "Bash(npx ng build)"
     ]
   }
 }

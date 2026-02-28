@@ -40,6 +40,7 @@ export class ProjectService {
 
     this.projectViewArray = this.projectsFromApi.map((project: any) => ({
       title: project.view['project-title'],
+      subtitle: project.view['subtitle'],
       description: project.view['project-description'],
       link: project.view['project-link'],
       img: project.view['project-img']
