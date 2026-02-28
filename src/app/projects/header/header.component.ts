@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ProjectService } from '../../project.service';
 import { Router } from '@angular/router';
 
@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit{
 
   constructor(
     public projectService: ProjectService,
-    private router: Router
+    private router: Router,
+    private cdr: ChangeDetectorRef
   ) { }
 
   ngOnInit(): void {
@@ -29,10 +30,11 @@ export class HeaderComponent implements OnInit{
 
   private async checkIfProjectIsAvailable() {
     while (true) {
-      await new Promise(r => setTimeout(r, 1000));
-      this.title = this.projectService.getProjectName()!
-      console.log(this.title)
-      if (this.title) {
+      await new Promise(r => setTimeout(r, 200));
+      const name = this.projectService.getProjectName();
+      if (name) {
+        this.title = name;
+        this.cdr.detectChanges();
         break;
       }
     }
