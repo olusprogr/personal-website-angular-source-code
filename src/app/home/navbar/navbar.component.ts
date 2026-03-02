@@ -24,7 +24,7 @@ export class NavbarComponent {
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     this.scrollProgress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
 
-    const sections = ['footer', 'projects', 'aboutme', 'home'];
+    const sections = ['footer', 'projects', 'timeline', 'home'];
     for (const id of sections) {
       const el = document.getElementById(id);
       if (el) {

@@ -1,0 +1,35 @@
+<section id="timeline" class="timeline-section">
+  <div class="timeline-decor-1"></div>
+  <div class="timeline-decor-2"></div>
+  <div class="timeline-inner">
+    <div class="section-header reveal reveal-up" [class.revealed]="isSectionRevealed">
+      <div>
+        <div class="section-badge">Timeline</div>
+        <h1 class="section-title">My Journey</h1>
+        <div class="title-bar"></div>
+      </div>
+      <p class="section-desc">A look back at the milestones that shaped me as a developer.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <div
+        class="timeline-item"
+        *ngFor="let entry of entries; let i = index; let odd = odd"
+        [class.right]="odd"
+        [class.revealed]="revealedItems[i]"
+        [style.transition-delay.ms]="150 * i">
+
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">{{ entry.year }}</span>
+          <h3 class="timeline-card-title">{{ entry.title }}</h3>
+          <p class="timeline-card-desc">{{ entry.description }}</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag" *ngFor="let tag of entry.tags">{{ tag }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

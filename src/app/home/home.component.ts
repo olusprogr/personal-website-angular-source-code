@@ -1,9 +1,10 @@
 import { Component, ElementRef, AfterViewInit } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StartComponent } from './start/start.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectService } from '../project.service';
 import { ProjectOverviewComponent } from './project-overview/project-overview.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { FooterComponent } from '../footer/footer.component';
 import { ScrollService } from '../scroll.service';
 
 import { RouterModule } from '@angular/router';
@@ -24,10 +25,11 @@ type projects = {
   imports: [
     NavbarComponent,
     StartComponent,
-    AboutmeComponent,
     CommonModule,
     RouterModule,
-    ProjectOverviewComponent
+    ProjectOverviewComponent,
+    TimelineComponent,
+    FooterComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

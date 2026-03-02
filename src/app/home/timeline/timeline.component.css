@@ -1,0 +1,297 @@
+.timeline-section {
+  background: #f8f9fc;
+  padding: 100px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-section::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(99, 102, 241, 0.04) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 11s ease-in-out infinite;
+}
+
+.timeline-section::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, rgba(139, 92, 246, 0.04) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 9s ease-in-out infinite reverse;
+}
+
+.timeline-decor-1 {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  width: 140px;
+  height: 140px;
+  border: 2px solid rgba(99, 102, 241, 0.1);
+  border-radius: 28px;
+  pointer-events: none;
+  transform: rotate(25deg);
+  animation: spin-slow 28s linear infinite;
+}
+
+.timeline-decor-2 {
+  position: absolute;
+  bottom: 20%;
+  right: 6%;
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgba(139, 92, 246, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 10s ease-in-out infinite 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(385deg); }
+}
+
+.timeline-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Reuse section header styles from project-overview */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 70px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.section-badge {
+  display: inline-flex;
+  padding: 4px 14px;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6366f1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.title-bar {
+  width: 36px;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 2px;
+}
+
+.section-desc {
+  max-width: 380px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+  align-self: flex-end;
+}
+
+/* Timeline layout */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.3), rgba(139, 92, 246, 0.3));
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 50px;
+  width: 50%;
+  padding-right: 50px;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-item.right {
+  margin-left: 50%;
+  padding-right: 0;
+  padding-left: 50px;
+  transform: translateX(40px);
+}
+
+.timeline-item.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-dot {
+  position: absolute;
+  right: -8px;
+  top: 24px;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 3px solid #6366f1;
+  border-radius: 50%;
+  z-index: 2;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item.right .timeline-dot {
+  right: auto;
+  left: -8px;
+}
+
+.timeline-item.revealed .timeline-dot {
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+.timeline-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 28px;
+  width: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 102, 241, 0.2);
+  box-shadow: 0 16px 40px rgba(99, 102, 241, 0.1), 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-year {
+  display: inline-flex;
+  padding: 3px 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.timeline-card-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.timeline-card-desc {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.timeline-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.timeline-tag {
+  padding: 3px 10px;
+  background: rgba(99, 102, 241, 0.06);
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6366f1;
+  letter-spacing: 0.02em;
+}
+
+/* Reveal animations */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.reveal-up {
+  transform: translateY(40px);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .timeline-inner { padding: 0 24px; }
+  .section-header { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .section-desc { max-width: 100%; align-self: auto; }
+
+  .timeline-line {
+    left: 8px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 36px;
+    transform: translateY(30px);
+  }
+
+  .timeline-item.right {
+    margin-left: 0;
+    padding-left: 36px;
+    padding-right: 0;
+    transform: translateY(30px);
+  }
+
+  .timeline-item.revealed {
+    transform: translateY(0);
+  }
+
+  .timeline-dot {
+    left: 0;
+    right: auto;
+  }
+
+  .timeline-item.right .timeline-dot {
+    left: 0;
+  }
+}
