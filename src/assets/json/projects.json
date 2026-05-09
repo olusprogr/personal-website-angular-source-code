@@ -1,1 +1,736 @@
-[{"_id":"666aebf1a2cfefc8883cce9b","project":"architect-discord-bot","data":{"view":{"project-title":"ArchiTect Discord Bot","project-description":"A fast, efficient, and user-friendly bot with numerous features for your Discord servers.","project-img":"../../../assets/img/architect-discord-bot/architect.png","subtitle":"TEAM BASED"},"main-information":{"project-name":"ArchiTect","creation-date":"26. June 2023","our-team":"ArchiTect-Development","project-website":"https://architect-discord-bot.onrender.com","code-repository":"https://github.com/olusprogr/ArchiTect-discord-bot","bot-invite":"https://discord.com/api/oauth2/authorize?client_id=1123005191038447646&permissions=8&scope=bot%20applications.commands","total-command-functions":33,"version-updates":"Current vesion: 2.0.0"},"technologies-tools":{"technologies":["Python","SQL"],"tools":["Discord API","VS Code","Git","GitHub"]},"highlights":{"challenges-solutions":[{"challenge":"Creating a bot that is user-friendly and efficient.","solution":"We created a bot that is easy to use and has a fast response time."},{"challenge":"Clean and structured code and file system.","solution":"How to clean code tutorials on youtube and stackoverflow."},{"challenge":"Adding usefull APIs to the bot.","solution":"Added reddit and steam API to implement meme and steam user information commands."}],"achievements-milestones":{"achievements":["Added 33 commands to the bot.","Created a website for the bot.","Added a daily credits system."],"milestones":["Reached 10 Servers.","1 year ArchiTect celebration"]}},"our-team":{"team-name":"ArchiTect-Development","team-members":[{"name":"Olivier","role":["Project-owner","Developer"],"link":"../../assets/img/architect-discord-bot/team/oli.webp"},{"name":"David","role":["Co-owner","Developer"],"link":"../../assets/img/architect-discord-bot/team/david.webp"},{"name":"Samuel","role":"Graphic Designer","link":"../../assets/img/architect-discord-bot/team/samuel.webp"},{"name":"Levi","role":"Developer","link":"../../assets/img/architect-discord-bot/team/levi.webp"},{"name":"Konrad","role":"Partner","link":""}],"discord-server":"https://discord.gg/AW3bhJSq"},"pictures":["../../assets/img/architect-discord-bot/pics/ArchiText orig..jpg","../../assets/img/architect-discord-bot/pics/Archtietc3.jpg","../../assets/img/architect-discord-bot/pics/iukoliul.png","../../assets/img/architect-discord-bot/pics/maincode archittect.png"],"version-updates":{"versions":[{"version-date":"v1.1.0 - 1.3.0 | 21/07- 25/07/2023","version-topic":"Added commands","version-description":"/help /kick /spam /activity /clear /embed /csgo_map /memberlist /ban"},{"version-date":"v1.4.x | 29/07 - 19/08/2023","version-topic":"Added commands","version-description":"/support"},{"version-date":"v1.5.x | 20/08 - 01/09/2023","version-topic":"Added commands","version-description":"/report /serverinfo /invite"},{"version-date":"v.1.6.x | 02/09 - 09/09/2023","version-topic":"Added commands","version-description":"/timeout /unmute"},{"version-date":"v1.7.x | 14/09 - 29/09/2023","version-topic":"Added commands","version-description":"/create password /give messages /rank /rank_get"},{"version-date":"v1.8.x | 02/10 - 19/11/2023","version-topic":"Added commands","version-description":"/automod filter_invites /automod filter_insults /roles"},{"version-date":"v.1.9.x | 24/11 - 12/12/2023","version-topic":"Added commands","version-description":"/daily_credits /meme"},{"version-date":"v2.0.x | 31/03/2023","version-topic":"Added commands","version-description":"/steam search_for_user /steam get_user_details /steam get_user_friend_list /suggest about_us"}]}}},{"_id":"666aebf1a2cfefc8883cce9c","project":"my-portfolio","data":{"view":{"project-title":"My Portfolio","project-description":"My official Portfolio to showcase all my works related to programming","project-img":"../../../assets/img/my-portfolio/my-portfolio.png","project-link":"https://olusprogr.github.io/personal-website/","subtitle":"PERSONAL PROJECT"},"main-information":{"project-name":"My Portfolio","creation-date":"03. December 2023","code-repository":"https://github.com/olusprogr/personal-website.git","total-command-functions":"Representing my current 4 best works and projects","version-updates":"Current version 1.3"},"technologies-tools":{"technologies":["HTML","CSS","TypeScript","Angular"],"tools":["TailBlocks","Bootstrap"]},"highlights":{"challenges-solutions":[{"challenge":"Creating a responsive design","solution":"Firsly used Bootstrap with a bit of help with the min-widht and max-width properties in CSS and later used TailBlocks to create a responsive design."},{"challenge":"Creating a dark/light mode","solution":"Firstly desided to use a button to switch between the two modes and later decided to use the dark mode only."}],"achievements-milestones":{"achievements":["Improved the design of the website and my front-end skills.","Laarned how to use Angular and TailBlocks to create a responsive design."],"milestones":["No yet reached any milestones."]}},"version-updates":{"versions":[{"version-date":"v1.0.0 | 03/12/2023","version-topic":"Initial release","version-description":"Created the basic structure of the website with HTML CSS and JS."},{"version-date":"v1.1.0 | 05/12/2023","version-topic":"Added new features","version-description":"Added a dark mode and a new section to the website. Improved the front-end."},{"version-date":"v1.2.0 | 07/12/2023","version-topic":"Added new features","version-description":"Added a new section to the website, created with Angular and TypeScript."},{"version-date":"v1.3.0 | 10/12/2023","version-topic":"Added new features","version-description":"Added a new section to the website, created with Angular and TypeScript."}]}}},{"_id":"666aed1f0023355252c21c31","project":"python-banking-system","data":{"view":{"project-title":"Python Banking System","project-description":"Streamlined Banking System: A Python OOP and SQL Implementation.","project-img":"../../../assets/img/banking-system/banking-system.png","subtitle":"PERSONAL PROJECT"},"main-information":{"project-name":"Python Banking System","creation-date":"03. December 2023","code-repository":"https://github.com/olusprogr/Banking-system.git","total-command-functions":12,"version-updates":"Current version 1.3"},"technologies-tools":{"technologies":["Python","SQL"],"tools":["Git","GitHub"]},"highlights":{"challenges-solutions":[],"achievements-milestones":{"achievements":["Added local SQL Database to the system"],"milestones":["No milestonee yet."]}},"pictures":["../../assets/img/banking-system/pics/main.png","../../assets/img/banking-system/pics/paths.png","../../assets/img/banking-system/pics/banking.png"],"version-updates":{"versions":[]}}},{"_id":"666aed1f0023355252c21c32","project":"pay2drink","data":{"view":{"project-title":"Pay2drink","project-description":"Pay2Drink is an Angular-based solution for beverage vending machines, allowing users to conveniently order and pay for their favorite drinks.","subtitle":"TEAM BASED"},"main-information":{"project-name":"Pay2drink","creation-date":"24. January 2024","our-team":"Internship at Atruvia AG","code-repository":"https://github.com/olusprogr/pay2drink-atruvia.git","total-command-functions":5,"version-updates":"Current version 1.0"},"technologies-tools":{"technologies":["Angular","TypeScript","HTML","CSS"],"tools":["Angular Materials","Bootstrap","Git","GitBucket"]},"highlights":{"challenges-solutions":[],"achievements-milestones":{"achievements":[],"milestones":[]}},"our-team":{"team-name":"Internship at Atruvia AG","team-members":[{"name":"Tom, Ben","role":["Login","Logout"]},{"name":"Luis, Olivier","role":"Databases"},{"name":"Milena","role":"Payment system"},{"name":"Finn","role":["Layout","Shopping cart"]},{"name":"Florian","role":"Credits"}],"discord-server":""},"version-updates":{"versions":[]}}},{"_id":"666aed1f0023355252c21c33","project":"game-team","data":{"view":{"project-title":"Game Team","project-description":"Game Team is a team of developers and 3D-designers who create Counter Strike maps for the community. (In Cooperation with ArchiTect-Development)","project-img":"../../../assets/img/game-team/game-team.png","subtitle":"TEAM BASED"},"main-information":{"project-name":"Game Team","creation-date":"12. April 2024","our-team":"Game Team","code-repository":"https://github.com/olusprogr/game-team-website.git","total-command-functions":2,"version-updates":"Current version 1.8"},"technologies-tools":{"technologies":["Angular","TypeScript","HTML","CSS"],"tools":["Angular Materials","Git","Tailwind","Hammer tools"]},"highlights":{"challenges-solutions":[{"challenge":"Designing the map realistic as it can be.","solution":"Practiced by debugging with shader."}],"achievements-milestones":{"achievements":["Reached the first 100 downloads","Reached the first 1000 downloads | 10.05.2024"],"milestones":[]}},"our-team":{"team-name":"Game Team","team-members":[{"name":"Simon","role":"Token manager"},{"name":"Olivier","role":"Web designer","link":"../../assets/img/game-team/team/oli.webp"},{"name":"David","role":"Map creator","link":"../../assets/img/game-team/team/david.webp"},{"name":"Samuel","role":"Graphic Designer","link":"../../assets/img/game-team/team/samuel.webp"}],"discord-server":"https://discord.gg/79Gcy8YK"},"version-updates":{"versions":[{"version-date":"v1.0 | 09/04/2024","version-topic":"Initial release","version-description":"Added Main Structure; Added A Site; Added A Apartments; Added A Hall"},{"version-date":"v1.1 | 10/04/2024","version-topic":"Church update","version-description":"Bug fixes on A Site; Added A Heaven; Added more Roofs on A Site / A Apartments / A Hall; Added Church; Better Lighting"},{"version-date":"v1.2 | 11/04/2024","version-topic":"T-spawn update","version-description":"Added T Spawn; Added Roads; Added A Garden; Added Ruin; Fixed Bugs & Lighting"},{"version-date":"v1.3 | 12/04/2024","version-topic":"B-house and street update","version-description":"Added more roads; Added B House exterior; Added Clipping; Added Power lines; Fixed Bugs"}]}}},{"_id":"6698424648bf51bc62213f56","project":"savesphere","data":{"view":{"project-title":"Savesphere","project-description":"Savesphere is an affiliate marketing website with Computer component and gaming stuff offers.","subtitle":"TEAM BASED","project-img":"../../../assets/img/savesphere/savesphere.jpeg"},"main-information":{"project-name":"Savesphere","creation-date":"27. March 2024","our-team":"Savesphere team: Levi, Oli","code-repository":"https://github.com/olusprogr/levi-website.git","total-command-functions":9,"version-updates":"Current version 3.0"},"technologies-tools":{"technologies":["Angular","TypeScript","HTML","CSS","Express JS"],"tools":["Angular Materials","Bootstrap","Git","GitHub","Render"]},"highlights":{"challenges-solutions":[],"achievements-milestones":{"achievements":[],"milestones":[]}},"our-team":{"team-name":"Savesphere dev-team","team-members":[{"name":"Levi","role":["Projectowner"],"link":"../../assets/img/savesphere/team/levi.webp"},{"name":"Olivier","role":"Web-devoloper (fullstack)","link":"../../assets/img/savesphere/team/oli.webp"}]},"version-updates":{"versions":[{"version-date":"v1.0 | 21/07- 27/03/2024","version-description":"Added front-end with simple local Json file as database.","version-topic":"Front-end"},{"version-date":"v2.0 | date unknown","version-description":"Added savesphere logo and improved design by a lot.","version-topic":"Front-end"},{"version-date":"v3.0 | 29/06/2024","version-description":"Added back-end with Express JS API for database management and added admin control panel.","version-topic":"Back-end / Admin panel"}]}}}]
+[
+  {
+    "_id": "666aebf1a2cfefc8883cce9b",
+    "project": "architect-discord-bot",
+    "data": {
+      "view": {
+        "project-title": "ArchiTect Discord Bot",
+        "project-description": "A fast, efficient, and user-friendly bot with numerous features for your Discord servers.",
+        "project-img": "../../../assets/img/architect-discord-bot/architect.png",
+        "subtitle": "TEAM BASED"
+      },
+      "main-information": {
+        "project-name": "ArchiTect",
+        "creation-date": "26. June 2023",
+        "our-team": "ArchiTect-Development",
+        "project-website": "https://architect-discord-bot.onrender.com",
+        "code-repository": "https://github.com/olusprogr/ArchiTect-discord-bot",
+        "bot-invite": "https://discord.com/api/oauth2/authorize?client_id=1123005191038447646&permissions=8&scope=bot%20applications.commands",
+        "total-command-functions": 33,
+        "version-updates": "Current vesion: 2.0.0",
+        "long-description": "ArchiTect is a versatile Discord Bot that started as a learning project and grew into a full server management tool. The bot was built and maintained by a team of five over more than a year and continuously expanded. In total, 33 slash commands were developed, including moderation features such as kick, ban, timeout and automod, a custom rank system with daily credit rewards, as well as integrations with external APIs like Reddit for memes and the Steam API for profile lookups. On the technical side, the project runs on Python with a SQL database in the background. We learned a lot about clean code, asynchronous programming and team collaboration with Git along the way."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "Python",
+          "SQL"
+        ],
+        "tools": [
+          "Discord API",
+          "VS Code",
+          "Git",
+          "GitHub"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [
+          {
+            "challenge": "Creating a bot that is user-friendly and efficient.",
+            "solution": "We created a bot that is easy to use and has a fast response time."
+          },
+          {
+            "challenge": "Clean and structured code and file system.",
+            "solution": "How to clean code tutorials on youtube and stackoverflow."
+          },
+          {
+            "challenge": "Adding usefull APIs to the bot.",
+            "solution": "Added reddit and steam API to implement meme and steam user information commands."
+          }
+        ],
+        "achievements-milestones": {
+          "achievements": [
+            "Added 33 commands to the bot.",
+            "Created a website for the bot.",
+            "Added a daily credits system."
+          ],
+          "milestones": [
+            "Reached 10 Servers.",
+            "1 year ArchiTect celebration"
+          ]
+        }
+      },
+      "our-team": {
+        "team-name": "ArchiTect-Development",
+        "team-members": [
+          {
+            "name": "Olivier",
+            "role": [
+              "Project-owner",
+              "Developer"
+            ],
+            "link": "../../assets/img/architect-discord-bot/team/oli.webp"
+          },
+          {
+            "name": "David",
+            "role": [
+              "Co-owner",
+              "Developer"
+            ],
+            "link": "../../assets/img/architect-discord-bot/team/david.webp"
+          },
+          {
+            "name": "Samuel",
+            "role": "Graphic Designer",
+            "link": "../../assets/img/architect-discord-bot/team/samuel.webp"
+          },
+          {
+            "name": "Levi",
+            "role": "Developer",
+            "link": "../../assets/img/architect-discord-bot/team/levi.webp"
+          },
+          {
+            "name": "Konrad",
+            "role": "Partner",
+            "link": ""
+          }
+        ],
+        "discord-server": "https://discord.gg/AW3bhJSq"
+      },
+      "pictures": [
+        "../../assets/img/architect-discord-bot/pics/ArchiText orig..jpg",
+        "../../assets/img/architect-discord-bot/pics/Archtietc3.jpg",
+        "../../assets/img/architect-discord-bot/pics/iukoliul.png",
+        "../../assets/img/architect-discord-bot/pics/maincode archittect.png"
+      ],
+      "version-updates": {
+        "versions": [
+          {
+            "version-date": "v1.1.0 - 1.3.0 | 21/07- 25/07/2023",
+            "version-topic": "Added commands",
+            "version-description": "/help /kick /spam /activity /clear /embed /csgo_map /memberlist /ban"
+          },
+          {
+            "version-date": "v1.4.x | 29/07 - 19/08/2023",
+            "version-topic": "Added commands",
+            "version-description": "/support"
+          },
+          {
+            "version-date": "v1.5.x | 20/08 - 01/09/2023",
+            "version-topic": "Added commands",
+            "version-description": "/report /serverinfo /invite"
+          },
+          {
+            "version-date": "v.1.6.x | 02/09 - 09/09/2023",
+            "version-topic": "Added commands",
+            "version-description": "/timeout /unmute"
+          },
+          {
+            "version-date": "v1.7.x | 14/09 - 29/09/2023",
+            "version-topic": "Added commands",
+            "version-description": "/create password /give messages /rank /rank_get"
+          },
+          {
+            "version-date": "v1.8.x | 02/10 - 19/11/2023",
+            "version-topic": "Added commands",
+            "version-description": "/automod filter_invites /automod filter_insults /roles"
+          },
+          {
+            "version-date": "v.1.9.x | 24/11 - 12/12/2023",
+            "version-topic": "Added commands",
+            "version-description": "/daily_credits /meme"
+          },
+          {
+            "version-date": "v2.0.x | 31/03/2023",
+            "version-topic": "Added commands",
+            "version-description": "/steam search_for_user /steam get_user_details /steam get_user_friend_list /suggest about_us"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": "666aebf1a2cfefc8883cce9c",
+    "project": "my-portfolio",
+    "data": {
+      "view": {
+        "project-title": "My Portfolio",
+        "project-description": "My official Portfolio to showcase all my works related to programming",
+        "project-img": "../../../assets/img/my-portfolio/my-portfolio.png",
+        "project-link": "https://olusprogr.github.io/personal-website/",
+        "subtitle": "PERSONAL PROJECT"
+      },
+      "main-information": {
+        "project-name": "My Portfolio",
+        "creation-date": "03. December 2023",
+        "code-repository": "https://github.com/olusprogr/personal-website.git",
+        "total-command-functions": "Representing my current 4 best works and projects",
+        "version-updates": "Current version 1.3",
+        "long-description": "My personal portfolio serves as the central place to showcase my work and projects. The site is built with Angular and TypeScript and reads all project data from a local JSON file. My main focus was building a modern, responsive interface that looks great on both desktop and mobile devices. For that I combined Tailwind CSS with Bootstrap and added custom animations using CSS keyframes and the Intersection Observer. Across multiple iterations I refined the design and added new sections like an interactive timeline and a tabbed about me navigation."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "HTML",
+          "CSS",
+          "TypeScript",
+          "Angular"
+        ],
+        "tools": [
+          "TailBlocks",
+          "Bootstrap"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [
+          {
+            "challenge": "Creating a responsive design",
+            "solution": "Firsly used Bootstrap with a bit of help with the min-widht and max-width properties in CSS and later used TailBlocks to create a responsive design."
+          },
+          {
+            "challenge": "Creating a dark/light mode",
+            "solution": "Firstly desided to use a button to switch between the two modes and later decided to use the dark mode only."
+          }
+        ],
+        "achievements-milestones": {
+          "achievements": [
+            "Improved the design of the website and my front-end skills.",
+            "Laarned how to use Angular and TailBlocks to create a responsive design."
+          ],
+          "milestones": [
+            "No yet reached any milestones."
+          ]
+        }
+      },
+      "version-updates": {
+        "versions": [
+          {
+            "version-date": "v1.0.0 | 03/12/2023",
+            "version-topic": "Initial release",
+            "version-description": "Created the basic structure of the website with HTML CSS and JS."
+          },
+          {
+            "version-date": "v1.1.0 | 05/12/2023",
+            "version-topic": "Added new features",
+            "version-description": "Added a dark mode and a new section to the website. Improved the front-end."
+          },
+          {
+            "version-date": "v1.2.0 | 07/12/2023",
+            "version-topic": "Added new features",
+            "version-description": "Added a new section to the website, created with Angular and TypeScript."
+          },
+          {
+            "version-date": "v1.3.0 | 10/12/2023",
+            "version-topic": "Added new features",
+            "version-description": "Added a new section to the website, created with Angular and TypeScript."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": "local-2025-07-24-ki-server",
+    "project": "ki-server",
+    "data": {
+      "view": {
+        "project-title": "KI-Server",
+        "project-description": "Selbstgehosteter API-Server zur Fernsteuerung eines eigenen Servers — mit JWT-Auth, SSH-Tunnel-Kontrolle (UFW-Firewall via API) und Geräte-Discovery im lokalen Netzwerk. Erreichbar unter olusprogr.dynv6.net (DynDNS, nicht immer aktiv).",
+        "project-img": "../../../assets/img/ki-server/ki-server-logo.svg",
+        "subtitle": "PERSONAL PROJECT"
+      },
+      "main-information": {
+        "project-name": "KI-Server",
+        "creation-date": "24. July 2025",
+        "code-repository": "https://github.com/olusprogr/ki-server",
+        "project-website": "https://olusprogr.dynv6.net",
+        "total-command-functions": "User-Registrierung, Login, Token-Validierung, SSH-Tunnel-Kontrolle, Netzwerk-Discovery",
+        "version-updates": "In active development",
+        "long-description": "The AI Server is a self hosted API server that lets me remotely control my own home server. It runs on Express 5 with MongoDB and is reachable via DynDNS at olusprogr.dynv6.net, although not always online. The core feature is a secure SSH tunnel control. Through a protected API endpoint I can dynamically open or close port 22 using UFW bash scripts. That way SSH does not have to stay permanently open, which significantly reduces the attack surface. Authentication runs through JWT with bcrypt hashed passwords and express rate limit, which mitigates brute force attempts. There is also a device discovery feature that pings all active devices in the local network. The frontend is an Angular 20 dashboard with Tailwind and Material Design that I am currently still building out."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "JavaScript",
+          "Node.js",
+          "Express 5",
+          "MongoDB",
+          "Bash"
+        ],
+        "tools": [
+          "JWT",
+          "bcrypt",
+          "express-rate-limit",
+          "dotenv",
+          "CORS",
+          "UFW (Firewall)",
+          "ping",
+          "DynDNS (dynv6)",
+          "Git",
+          "GitHub"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [
+          {
+            "challenge": "Sichere Fernsteuerung eines Servers ohne den SSH-Port permanent offen zu lassen.",
+            "solution": "API-Endpoint `/ssh-tunnel-auth` öffnet/schließt Port 22 dynamisch via UFW-Skripte (open-ssh-tunnel.sh, close-ssh-tunnel.sh) — geschützt durch JWT + Rate-Limit (2 Requests/Minute)."
+          },
+          {
+            "challenge": "Schutz der Auth-Endpoints vor Brute-Force-Angriffen.",
+            "solution": "express-rate-limit pro Route: Registrierung 5/Stunde, SSH-Tunnel 2/Minute, Device-Discovery 5/Minute."
+          },
+          {
+            "challenge": "Flexibler Datenbank-Zugriff zwischen lokaler Entwicklung und produktivem Server.",
+            "solution": "DatabaseService mit umschaltbarer URI (LOCAL_DB_HOST vs. DB_HOST) — wählt die Verbindung beim Serverstart."
+          }
+        ],
+        "achievements-milestones": {
+          "achievements": [
+            "Vollständige JWT-basierte Auth mit bcrypt-Hashing",
+            "Dynamische SSH-Port-Steuerung über UFW per API",
+            "Lokales Netzwerk-Discovery via Ping",
+            "Über DynDNS (olusprogr.dynv6.net) öffentlich erreichbar"
+          ],
+          "milestones": []
+        }
+      },
+      "version-updates": {
+        "versions": []
+      }
+    }
+  },
+  {
+    "_id": "local-2024-02-25-neural-network",
+    "project": "image-number-recognition-ai",
+    "data": {
+      "view": {
+        "project-title": "Image Number Recognition AI",
+        "project-description": "Mein erstes neuronales Netz — von Grund auf mit NumPy implementiert, ohne Deep-Learning-Frameworks. Erkennt handgeschriebene Ziffern und Buchstaben (62 Klassen) aus dem EMNIST-Datensatz.",
+        "subtitle": "PERSONAL PROJECT"
+      },
+      "main-information": {
+        "project-name": "Image Number Recognition AI",
+        "creation-date": "25. February 2024",
+        "code-repository": "https://github.com/olusprogr/Image-number-recognition-AI-First-neural-network",
+        "thesis": "Facharbeit: Grundlagen künstlicher neuronaler Netzwerke und Lernalgorithmen am Beispiel einer selbst implementierten Ziffererkennung mit Einordnung moderner Sprachmodelle (LLMs)",
+        "thesis-link": "https://1drv.ms/w/c/55156600a3b287a3/IQC4bIMJPhFjSoa30wcjs5oKAdP6HoroCp_l5h-wg5eVviE?e=FKxkYC",
+        "total-command-functions": "62 Klassen (Ziffern 0–9, A–Z, a–z)",
+        "version-updates": "Current version 1.3",
+        "long-description": "My first neural network, built completely from scratch in pure NumPy, without frameworks like PyTorch or TensorFlow. I wrote all the math myself, including forward pass, backpropagation, cross entropy loss and He initialization, in order to truly understand the concepts. The network recognizes handwritten digits, uppercase and lowercase letters from the EMNIST dataset, 62 classes in total. The architecture has four hidden layers with 512, 256, 128 and 64 neurons, each with ReLU activation, and a softmax output layer. Alongside the code I wrote a thesis explaining the foundations of artificial neural networks and placing modern language models like LLMs into context. Across multiple versions, a monolithic script evolved into a clean, object oriented architecture."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "Python",
+          "NumPy"
+        ],
+        "tools": [
+          "EMNIST Dataset",
+          "Matplotlib",
+          "Git",
+          "GitHub",
+          "VS Code"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [
+          {
+            "challenge": "Mathematik eines neuronalen Netzes (Forward Pass, Backpropagation, Cross-Entropy Loss) ohne Framework verstehen und implementieren.",
+            "solution": "Schrittweise Implementierung in reinem NumPy mit He-Initialisierung, Softmax-Output und Learning-Rate-Decay."
+          },
+          {
+            "challenge": "Sauberer Refactor von monolithischem Skript zu objektorientierter Architektur.",
+            "solution": "Trennung in NeuralNetwork, DatasetLoader, Operations (ReLU/Softmax) und LossGUI über die Versionen v1.0 → v1.3."
+          }
+        ],
+        "achievements-milestones": {
+          "achievements": [
+            "Vollständig selbst implementiertes Feedforward-Netz mit 4 Hidden Layers (512→256→128→64) ohne Frameworks",
+            "Klassifikation von 62 Klassen (EMNIST byclass)",
+            "Facharbeit als wissenschaftliche Begleitarbeit verfasst"
+          ],
+          "milestones": [
+            "v1.0 Monolithisches Skript",
+            "v1.3 Saubere OOP-Architektur"
+          ]
+        }
+      },
+      "version-updates": {
+        "versions": [
+          {
+            "version-date": "v1.0 | 25/02/2024",
+            "version-topic": "Initial release",
+            "version-description": "Monolithisches Skript mit Forward Pass, Backpropagation und Cross-Entropy Loss in reinem NumPy."
+          },
+          {
+            "version-date": "v1.3 | 18/04/2026",
+            "version-topic": "OOP-Refactor",
+            "version-description": "Trennung in NeuralNetwork, DatasetLoader, Operations und LossGUI; Erweiterung auf 62 Klassen (EMNIST byclass)."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": "666aed1f0023355252c21c31",
+    "project": "python-banking-system",
+    "data": {
+      "view": {
+        "project-title": "Python Banking System",
+        "project-description": "Streamlined Banking System: A Python OOP and SQL Implementation.",
+        "project-img": "../../../assets/img/banking-system/banking-system.png",
+        "subtitle": "PERSONAL PROJECT"
+      },
+      "main-information": {
+        "project-name": "Python Banking System",
+        "creation-date": "03. December 2023",
+        "code-repository": "https://github.com/olusprogr/Banking-system.git",
+        "total-command-functions": 12,
+        "version-updates": "Current version 1.3",
+        "long-description": "A banking system written in Python, built to practice object oriented programming and SQL database access in one cohesive project. The system covers the basic functions of a bank: creating accounts, depositing and withdrawing money, making transfers and viewing balances. All data is persistently stored in a local SQL database. The focus was on clean class separation and a clear structure that can be easily extended later."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "Python",
+          "SQL"
+        ],
+        "tools": [
+          "Git",
+          "GitHub"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [],
+        "achievements-milestones": {
+          "achievements": [
+            "Added local SQL Database to the system"
+          ],
+          "milestones": [
+            "No milestonee yet."
+          ]
+        }
+      },
+      "pictures": [
+        "../../assets/img/banking-system/pics/main.png",
+        "../../assets/img/banking-system/pics/paths.png",
+        "../../assets/img/banking-system/pics/banking.png"
+      ],
+      "version-updates": {
+        "versions": []
+      }
+    }
+  },
+  {
+    "_id": "666aed1f0023355252c21c32",
+    "project": "pay2drink",
+    "data": {
+      "view": {
+        "project-title": "Pay2drink",
+        "project-description": "Pay2Drink is an Angular-based solution for beverage vending machines, allowing users to conveniently order and pay for their favorite drinks.",
+        "subtitle": "TEAM BASED"
+      },
+      "main-information": {
+        "project-name": "Pay2drink",
+        "creation-date": "24. January 2024",
+        "our-team": "Internship at Atruvia AG",
+        "code-repository": "https://github.com/olusprogr/pay2drink-atruvia.git",
+        "total-command-functions": 5,
+        "version-updates": "Current version 1.0",
+        "long-description": "Pay2Drink is a web based solution for beverage vending machines, developed as a team project during my internship at Atruvia AG. Users can register, log in, pick their drink and pay directly through an integrated payment system. The project is built with Angular on the frontend, with Angular Material and Bootstrap providing the UI. We split the work across five areas in the team: login and logout, database connection, payment system, layout and shopping cart, and credit management. For me it was the first experience working professionally in a corporate team."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "Angular",
+          "TypeScript",
+          "HTML",
+          "CSS"
+        ],
+        "tools": [
+          "Angular Materials",
+          "Bootstrap",
+          "Git",
+          "GitBucket"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [],
+        "achievements-milestones": {
+          "achievements": [],
+          "milestones": []
+        }
+      },
+      "our-team": {
+        "team-name": "Internship at Atruvia AG",
+        "team-members": [
+          {
+            "name": "Tom, Ben",
+            "role": [
+              "Login",
+              "Logout"
+            ]
+          },
+          {
+            "name": "Luis, Olivier",
+            "role": "Databases"
+          },
+          {
+            "name": "Milena",
+            "role": "Payment system"
+          },
+          {
+            "name": "Finn",
+            "role": [
+              "Layout",
+              "Shopping cart"
+            ]
+          },
+          {
+            "name": "Florian",
+            "role": "Credits"
+          }
+        ],
+        "discord-server": ""
+      },
+      "version-updates": {
+        "versions": []
+      }
+    }
+  },
+  {
+    "_id": "666aed1f0023355252c21c33",
+    "project": "game-team",
+    "data": {
+      "view": {
+        "project-title": "Game Team",
+        "project-description": "Game Team is a team of developers and 3D-designers who create Counter Strike maps for the community. (In Cooperation with ArchiTect-Development)",
+        "project-img": "../../../assets/img/game-team/game-team.png",
+        "subtitle": "TEAM BASED"
+      },
+      "main-information": {
+        "project-name": "Game Team",
+        "creation-date": "12. April 2024",
+        "our-team": "Game Team",
+        "code-repository": "https://github.com/olusprogr/game-team-website.git",
+        "total-command-functions": 2,
+        "version-updates": "Current version 1.8",
+        "long-description": "Game Team is a website for a developer and 3D designer crew that creates Counter Strike maps for the community. The project was built in cooperation with ArchiTect Development. The site presents our maps, introduces the team and provides an overview of recent releases. Technically, everything is built with Angular, TypeScript and Tailwind CSS. A particular challenge was making the 3D map designs look as realistic as possible, which we achieved through intensive shader work. To this day the project has gathered over 1000 downloads and we have shipped multiple map updates across versions 1.0 through 1.3."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "Angular",
+          "TypeScript",
+          "HTML",
+          "CSS"
+        ],
+        "tools": [
+          "Angular Materials",
+          "Git",
+          "Tailwind",
+          "Hammer tools"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [
+          {
+            "challenge": "Designing the map realistic as it can be.",
+            "solution": "Practiced by debugging with shader."
+          }
+        ],
+        "achievements-milestones": {
+          "achievements": [
+            "Reached the first 100 downloads",
+            "Reached the first 1000 downloads | 10.05.2024"
+          ],
+          "milestones": []
+        }
+      },
+      "our-team": {
+        "team-name": "Game Team",
+        "team-members": [
+          {
+            "name": "Simon",
+            "role": "Token manager"
+          },
+          {
+            "name": "Olivier",
+            "role": "Web designer",
+            "link": "../../assets/img/game-team/team/oli.webp"
+          },
+          {
+            "name": "David",
+            "role": "Map creator",
+            "link": "../../assets/img/game-team/team/david.webp"
+          },
+          {
+            "name": "Samuel",
+            "role": "Graphic Designer",
+            "link": "../../assets/img/game-team/team/samuel.webp"
+          }
+        ],
+        "discord-server": "https://discord.gg/79Gcy8YK"
+      },
+      "version-updates": {
+        "versions": [
+          {
+            "version-date": "v1.0 | 09/04/2024",
+            "version-topic": "Initial release",
+            "version-description": "Added Main Structure; Added A Site; Added A Apartments; Added A Hall"
+          },
+          {
+            "version-date": "v1.1 | 10/04/2024",
+            "version-topic": "Church update",
+            "version-description": "Bug fixes on A Site; Added A Heaven; Added more Roofs on A Site / A Apartments / A Hall; Added Church; Better Lighting"
+          },
+          {
+            "version-date": "v1.2 | 11/04/2024",
+            "version-topic": "T-spawn update",
+            "version-description": "Added T Spawn; Added Roads; Added A Garden; Added Ruin; Fixed Bugs & Lighting"
+          },
+          {
+            "version-date": "v1.3 | 12/04/2024",
+            "version-topic": "B-house and street update",
+            "version-description": "Added more roads; Added B House exterior; Added Clipping; Added Power lines; Fixed Bugs"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": "6698424648bf51bc62213f56",
+    "project": "savesphere",
+    "data": {
+      "view": {
+        "project-title": "Savesphere",
+        "project-description": "Savesphere is an affiliate marketing website with Computer component and gaming stuff offers.",
+        "subtitle": "TEAM BASED",
+        "project-img": "../../../assets/img/savesphere/savesphere.jpeg"
+      },
+      "main-information": {
+        "project-name": "Savesphere",
+        "creation-date": "27. March 2024",
+        "our-team": "Savesphere team: Levi, Oli",
+        "code-repository": "https://github.com/olusprogr/levi-website.git",
+        "total-command-functions": 9,
+        "version-updates": "Current version 3.0",
+        "long-description": "Savesphere is an affiliate marketing website focused on computer components and gaming gear. The project was built in a two person team with Levi and grew through three major version jumps. The first version was a pure frontend with a local JSON file as the data source. In version 2 we redesigned the UI from the ground up and introduced a custom logo. With version 3 came a full backend based on Express JS, which handles database operations and provides an admin control panel for managing offers. Deployment runs on Render."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "Angular",
+          "TypeScript",
+          "HTML",
+          "CSS",
+          "Express JS"
+        ],
+        "tools": [
+          "Angular Materials",
+          "Bootstrap",
+          "Git",
+          "GitHub",
+          "Render"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [],
+        "achievements-milestones": {
+          "achievements": [],
+          "milestones": []
+        }
+      },
+      "our-team": {
+        "team-name": "Savesphere dev-team",
+        "team-members": [
+          {
+            "name": "Levi",
+            "role": [
+              "Projectowner"
+            ],
+            "link": "../../assets/img/savesphere/team/levi.webp"
+          },
+          {
+            "name": "Olivier",
+            "role": "Web-devoloper (fullstack)",
+            "link": "../../assets/img/savesphere/team/oli.webp"
+          }
+        ]
+      },
+      "version-updates": {
+        "versions": [
+          {
+            "version-date": "v1.0 | 21/07- 27/03/2024",
+            "version-description": "Added front-end with simple local Json file as database.",
+            "version-topic": "Front-end"
+          },
+          {
+            "version-date": "v2.0 | date unknown",
+            "version-description": "Added savesphere logo and improved design by a lot.",
+            "version-topic": "Front-end"
+          },
+          {
+            "version-date": "v3.0 | 29/06/2024",
+            "version-description": "Added back-end with Express JS API for database management and added admin control panel.",
+            "version-topic": "Back-end / Admin panel"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "_id": "local-2024-09-15-mc-dashboard",
+    "project": "minecraft-server-dashboard",
+    "data": {
+      "view": {
+        "project-title": "Minecraft Server Dashboard",
+        "project-description": "Webbasiertes Dashboard zum Hosten und Verwalten eigener Minecraft-Server, mit JWT-basiertem Auth-System (Login nur auf Anfrage) und Live-Server-Steuerung.",
+        "subtitle": "PERSONAL PROJECT"
+      },
+      "main-information": {
+        "project-name": "Minecraft Server Dashboard",
+        "creation-date": "15. September 2024",
+        "code-repository": "https://github.com/olusprogr/minecraft-server-dashboard",
+        "total-command-functions": "Login, Server-Verwaltung, Live-Steuerung",
+        "version-updates": "In active development",
+        "long-description": "A web based dashboard for hosting and managing your own Minecraft servers. The project consists of two repositories: an Angular 17 frontend with server side rendering, Material Design, Tailwind and Bootstrap, plus an Express backend with MongoDB. Authentication runs through JWT tokens, passwords are hashed with bcrypt, and login is only granted on request. Inside the dashboard, users can configure, start and stop their servers and view live status. The project is currently in active development."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "Angular",
+          "TypeScript",
+          "HTML",
+          "CSS",
+          "Node.js",
+          "Express",
+          "MongoDB"
+        ],
+        "tools": [
+          "Angular SSR",
+          "Angular Material",
+          "Tailwind CSS",
+          "Bootstrap",
+          "JWT",
+          "bcrypt",
+          "Git",
+          "GitHub"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [
+          {
+            "challenge": "Sicheres Authentifizierungssystem für eingeschränkten Zugriff.",
+            "solution": "JWT-basierte Authentifizierung mit bcrypt-Password-Hashing — Login wird nur auf Anfrage freigeschaltet."
+          },
+          {
+            "challenge": "Trennung von Frontend und Backend bei gleichzeitig konsistenter Session-Verwaltung.",
+            "solution": "Separates Backend-Repository (Express + MongoDB) mit JWT-Tokens, die im Frontend persistent gehalten werden."
+          }
+        ],
+        "achievements-milestones": {
+          "achievements": [
+            "Vollständige Auth-Pipeline mit JWT",
+            "Angular 17 mit Server-Side-Rendering aufgesetzt"
+          ],
+          "milestones": []
+        }
+      },
+      "version-updates": {
+        "versions": []
+      }
+    }
+  }
+]

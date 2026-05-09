@@ -51,12 +51,6 @@ export class TimelineComponent implements OnInit {
       tags: ['Full Stack Development', 'Server Management', 'Deployment', 'Projects']
     },
     {
-      year: '2025',
-      title: 'Exploring Cloud Technologies and DevOps',
-      description: 'Started learning about cloud platforms like AWS and Azure, as well as DevOps practices to streamline development and deployment processes.',
-      tags: ['Cloud Technologies', 'AWS', 'Azure', 'DevOps', 'Learning']
-    },
-    {
       year: '2026',
       title: 'Continuing to Learn and Grow',
       description: 'Continuing to expand my knowledge in full stack development, Machine Learning, and Server Management practices.',

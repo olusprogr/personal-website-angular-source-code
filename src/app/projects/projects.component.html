@@ -24,7 +24,7 @@
     <img class="proj-hero-img" alt="Project img" [src]="this.currentProjectData['view']['project-img']">
     <div class="proj-hero-text">
       <h1 class="proj-hero-title">{{this.currentProjectData["view"]["project-title"]}}</h1>
-      <p class="proj-hero-desc">{{this.currentProjectData['view']['project-description']}}</p>
+      <p class="proj-hero-desc">{{this.currentProjectData['main-information']['long-description'] || this.currentProjectData['view']['project-description']}}</p>
     </div>
   </section>
 
