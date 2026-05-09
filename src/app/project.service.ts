@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ApiService } from './api.service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,34 +10,23 @@ export class ProjectService {
   private currentProjectName: string = "No Project Selected";
   private scroolContent: string | undefined = undefined;
 
-  constructor(private apiService: ApiService) {
-    this.runGetAllProjectsMethodEveryXMilliseconds();
+  constructor(private http: HttpClient) {
+    this.loadProjects();
   }
 
-  private async runGetAllProjectsMethodEveryXMilliseconds(): Promise<void> {
-    while (true) {
-      await new Promise(r => setTimeout(r, 500))
-      this.getAllProjects()
-      if (this.projectsFromApi.length > 0) {break}
-    }
-  }
-
-  private getAllProjects(): void {
-    this.apiService.getAllProjects().subscribe({
+  private loadProjects(): void {
+    this.http.get<any[]>('assets/json/projects.json').subscribe({
       next: (data) => {
         this.projectsFromApi = data.map((project: any) => project.data);
-        console.log('Projects fetched successfully:', this.projectsFromApi);
         this.createProjectViewArray();
       },
       error: (error) => {
-        console.error('Error fetching projects!', error);
+        console.error('Error loading local projects.json!', error);
       }
     });
   }
 
   private createProjectViewArray(): void {
-    this.projectViewArray = this.projectViewArray.filter(item => item !== undefined);
-
     this.projectViewArray = this.projectsFromApi.map((project: any) => ({
       title: project.view['project-title'],
       subtitle: project.view['subtitle'],
