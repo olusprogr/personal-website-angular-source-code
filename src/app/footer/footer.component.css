@@ -90,6 +90,14 @@
   align-self: flex-end;
 }
 
+.footer-tagline {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
 /* Contact cards */
 .contact-cards {
   display: grid;

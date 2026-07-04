@@ -22,39 +22,39 @@ export class TimelineComponent implements OnInit {
   entries: TimelineEntry[] = [
     {
       year: '2021',
-      title: 'Started My Coding Journey',
-      description: 'Discovered programming and began learning the fundamentals of Python.',
-      tags: ['Python', 'Programming Basics', 'Learning']
+      title: 'Wrote my first line of Python',
+      description: 'Watched way too many YouTube tutorials and slowly stopped feeling lost. Print statements everywhere.',
+      tags: ['Python', 'Tutorials', 'Beginner stuff']
     },
     {
       year: '2022',
-      title: 'First Real Projects',
-      description: 'Built my first food ordering application and started improving my object-oriented programming skills. Learned backend development with Python.',
-      tags: ['Python', 'OOP', 'Backend Development', 'Projects']
+      title: 'Built the food ordering thing',
+      description: 'Made a Tkinter app based on my school cafeteria menu. It was clunky, but it worked, and that was the moment I got hooked.',
+      tags: ['Python', 'Tkinter', 'OOP', 'First real project']
     },
     {
       year: '2023',
-      title: 'Developing Discord Bot',
-      description: 'Created Architect to manage server activities and enhance user engagement. Gained experience with APIs and asynchronous programming as well as frontend development and Database management.',
-      tags: ['Discord Bot', 'APIs', 'Asynchronous Programming', 'Frontend Development', 'Database Management', 'Projects', 'Team']
+      title: 'Started building Architect (Discord bot)',
+      description: 'Kept adding features until it turned into a proper project. Learned about APIs, async, and how databases actually work when you break them.',
+      tags: ['Discord bot', 'APIs', 'Async', 'SQLite']
     },
     {
       year: '2023',
-      title: 'Building My Portfolio',
-      description: 'Focused on creating polished projects to showcase my skills. Meanwhile, I was also learning about web development and full stack development to get more reach.',
-      tags: ['Web Development', 'Full Stack Development', 'Projects', 'Portfolio']
+      title: 'Jumped into web dev',
+      description: 'Wanted a place to show my stuff, so I started learning HTML/CSS and eventually Angular. This portfolio is basically the result.',
+      tags: ['Angular', 'TypeScript', 'Web dev']
     },
     {
       year: '2024',
-      title: 'Building Full Stack Web Applications and exploring Server Management',
-      description: 'Expanded my knowledge in full stack development and began exploring server management and deployment strategies.',
-      tags: ['Full Stack Development', 'Server Management', 'Deployment', 'Projects']
+      title: 'Started hosting my own stuff',
+      description: 'Got a Raspberry Pi running Linux, put my bot on it, and figured out cron, SSH, and why not to run things as root.',
+      tags: ['Linux', 'RaspiOS', 'Self hosting']
     },
     {
       year: '2026',
-      title: 'Continuing to Learn and Grow',
-      description: 'Continuing to expand my knowledge in full stack development, Machine Learning, and Server Management practices.',
-      tags: ['Full Stack Development', 'Machine Learning', 'Server Management']
+      title: 'Still at it',
+      description: 'Digging into APIs with Express, some ML on the side, and messing around with AWS. Basically same as before, just harder problems.',
+      tags: ['ExpressJS', 'AWS', 'Machine Learning']
     }
   ];
 

@@ -1,6 +1,6 @@
 .aboutme-section {
   background: #f8f9fc;
-  padding: 100px 0;
+  padding: 70px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.04);
   position: relative;
   overflow: hidden;
@@ -72,7 +72,7 @@
   padding: 0 40px;
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 60px;
   position: relative;
   z-index: 1;
 }
@@ -82,8 +82,8 @@
 }
 
 .aboutme-image {
-  width: 340px;
-  height: 400px;
+  width: 280px;
+  height: 320px;
   object-fit: cover;
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -130,7 +130,62 @@
   font-size: 15px;
   color: #94a3b8;
   line-height: 1.8;
-  margin-bottom: 32px;
+  margin-bottom: 14px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skills-group-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.skill-chip {
+  padding: 3px 10px;
+  background: rgba(99, 102, 241, 0.07);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6366f1;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.skill-chip:hover {
+  background: rgba(99, 102, 241, 0.14);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.tab-content {
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tab-content.fading {
+  opacity: 0;
+  transform: translateY(6px);
 }
 
 .aboutme-buttons {

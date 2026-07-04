@@ -134,6 +134,31 @@
   animation: fadeInUp 0.6s ease-out 0.35s both;
 }
 
+.hero-title-line {
+  display: block;
+}
+
+.name-slot {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.name-reserve {
+  visibility: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.name-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
 .accent-name {
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   -webkit-background-clip: text;
@@ -197,6 +222,45 @@
 .hero-image-wrap {
   flex-shrink: 0;
   animation: slideInRight 0.8s ease-out 0.3s both;
+  position: relative;
+}
+
+.ai-note {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: -160px;
+  width: 340px;
+  height: 140px;
+  pointer-events: none;
+  animation: fadeInUp 0.6s ease-out 1.1s both;
+}
+
+.ai-note-text {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 130px;
+  text-align: center;
+  font-family: 'Caveat', 'Bradley Hand', 'Segoe Print', cursive;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #6366f1;
+  transform: rotate(-4deg);
+  transform-origin: center top;
+}
+
+.ai-note-arrow {
+  position: absolute;
+  left: 140px;
+  top: -40px;
+  width: 140px;
+  height: 95px;
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .ai-note { display: none; }
 }
 
 .hero-image {
@@ -214,6 +278,42 @@
   box-shadow: 0 30px 70px rgba(99, 102, 241, 0.18), 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 36px;
+  animation: fadeInUp 0.6s ease-out 0.8s both;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-stat-number {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.hero-stat-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
 @media (max-width: 900px) {
   .hero-inner {
     flex-direction: column;
@@ -228,4 +328,5 @@
 
   .social-links { justify-content: center; }
   .hero-badge { margin: 0 auto 24px; }
+  .hero-stats { justify-content: center; }
 }

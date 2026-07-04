@@ -1,20 +1,20 @@
 [
   {
     "title": "My Journey",
-    "description": "Honestly, when I first started coding, I had no clue what I was doing. Everything looked like random symbols on a screen. I spent way too many hours on YouTube tutorials just to understand the basics. Then one day I discovered Tkinter in Python — and that changed everything. Suddenly I could actually build stuff with a real interface. My first real project? A food ordering app inspired by the menu system at my school cafeteria. Nothing fancy, but I was hooked. From there I just kept going, picked up new languages, started bigger projects, and never really stopped.",
-    "subTitle": "Right now I'm deep into Linux server management and building APIs.",
-    "subDescription": "Now, let me take you through some of my projects..."
+    "description": "When I first started coding I had no idea what I was doing. Everything looked like random symbols on a screen. I spent way too many hours on YouTube tutorials just to get the basics down. Then one day I found Tkinter in Python and suddenly I could build stuff with a real interface. My first real project was a food ordering app based on my school cafeteria menu. Nothing fancy, but I was hooked. From there I just kept going, picked up new languages, started bigger projects, and never really stopped.",
+    "subTitle": "Right now I'm into Linux server management and building APIs.",
+    "subDescription": "Now let me show you some of my projects."
   },
   {
     "title": "My Experience",
-    "description": "I've been writing code for about 3 years now. Started with Python, then moved into JavaScript and TypeScript for both frontend and backend stuff. I spend most of my time building APIs and writing object-oriented code. I'm still learning web dev every day, but I can already put together full pages in Angular and get them running on an AWS VM. I also picked up some C++ and Java basics in school — nothing crazy, but enough to understand how things work under the hood. I just like figuring things out and getting better at what I do, one project at a time.",
+    "description": "I've been writing code for about 5 years now. Started with Python, then moved into JavaScript and TypeScript for both frontend and backend. I spend most of my time building APIs and writing object oriented code. I can put together full pages in Angular and get them running on an AWS server. I also picked up some C++ and Java basics in school, enough to understand how things work under the hood. I just like figuring things out and getting better at what I do, one project at a time.",
     "subTitle": "Writing code since I was 13.",
     "subDescription": ""
   },
   {
     "title": "Skills I have Learned",
-    "description": "Python was my starting point — OOP, Tkinter, Pycord, SQLite, all that good stuff. After about a year I jumped into TypeScript and Angular, which is what I mainly use for web projects now. I also run Linux (RaspiOS) on a VM where I host my Discord bot and manage everything with Crontab. Lately I've been getting into API development with ExpressJS, which has been fun to learn.",
-    "subTitle": "Always picking up something new — tools, frameworks, whatever catches my interest.",
+    "description": "Python was my starting point. OOP, Tkinter, Pycord, SQLite, all that good stuff. After about a year I jumped into TypeScript and Angular, which is what I mainly use for web projects now. I also run Linux on a VM where I host my Discord bot and manage everything with cron jobs. Lately I've been getting into API development with Express, which has been fun to learn.",
+    "subTitle": "Always picking up something new. Tools, frameworks, whatever catches my interest.",
     "subDescription": ""
   }
 ]

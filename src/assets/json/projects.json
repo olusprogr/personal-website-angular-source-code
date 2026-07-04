@@ -232,7 +232,7 @@
     "data": {
       "view": {
         "project-title": "KI-Server",
-        "project-description": "Selbstgehosteter API-Server zur Fernsteuerung eines eigenen Servers — mit JWT-Auth, SSH-Tunnel-Kontrolle (UFW-Firewall via API) und Geräte-Discovery im lokalen Netzwerk. Erreichbar unter olusprogr.dynv6.net (DynDNS, nicht immer aktiv).",
+        "project-description": "A self-hosted API server for remote controlling my own home server. Includes JWT auth, SSH tunnel control via UFW firewall, and device discovery on the local network. Reachable at olusprogr.dynv6.net (DynDNS, not always online).",
         "project-img": "../../../assets/img/ki-server/ki-server-logo.svg",
         "subtitle": "PERSONAL PROJECT"
       },
@@ -241,7 +241,7 @@
         "creation-date": "24. July 2025",
         "code-repository": "https://github.com/olusprogr/ki-server",
         "project-website": "https://olusprogr.dynv6.net",
-        "total-command-functions": "User-Registrierung, Login, Token-Validierung, SSH-Tunnel-Kontrolle, Netzwerk-Discovery",
+        "total-command-functions": "User registration, login, token validation, SSH tunnel control, network discovery",
         "version-updates": "In active development",
         "long-description": "The AI Server is a self hosted API server that lets me remotely control my own home server. It runs on Express 5 with MongoDB and is reachable via DynDNS at olusprogr.dynv6.net, although not always online. The core feature is a secure SSH tunnel control. Through a protected API endpoint I can dynamically open or close port 22 using UFW bash scripts. That way SSH does not have to stay permanently open, which significantly reduces the attack surface. Authentication runs through JWT with bcrypt hashed passwords and express rate limit, which mitigates brute force attempts. There is also a device discovery feature that pings all active devices in the local network. The frontend is an Angular 20 dashboard with Tailwind and Material Design that I am currently still building out."
       },
@@ -269,24 +269,24 @@
       "highlights": {
         "challenges-solutions": [
           {
-            "challenge": "Sichere Fernsteuerung eines Servers ohne den SSH-Port permanent offen zu lassen.",
-            "solution": "API-Endpoint `/ssh-tunnel-auth` öffnet/schließt Port 22 dynamisch via UFW-Skripte (open-ssh-tunnel.sh, close-ssh-tunnel.sh) — geschützt durch JWT + Rate-Limit (2 Requests/Minute)."
+            "challenge": "Controlling the server remotely without keeping SSH permanently open.",
+            "solution": "The `/ssh-tunnel-auth` endpoint opens and closes port 22 dynamically via UFW scripts, protected by JWT and a rate limit of 2 requests per minute."
           },
           {
-            "challenge": "Schutz der Auth-Endpoints vor Brute-Force-Angriffen.",
-            "solution": "express-rate-limit pro Route: Registrierung 5/Stunde, SSH-Tunnel 2/Minute, Device-Discovery 5/Minute."
+            "challenge": "Protecting auth endpoints from brute force attacks.",
+            "solution": "express-rate-limit per route: registration 5 per hour, SSH tunnel 2 per minute, device discovery 5 per minute."
           },
           {
-            "challenge": "Flexibler Datenbank-Zugriff zwischen lokaler Entwicklung und produktivem Server.",
-            "solution": "DatabaseService mit umschaltbarer URI (LOCAL_DB_HOST vs. DB_HOST) — wählt die Verbindung beim Serverstart."
+            "challenge": "Flexible database access between local development and the production server.",
+            "solution": "A DatabaseService with a switchable URI between LOCAL_DB_HOST and DB_HOST, picked at server startup."
           }
         ],
         "achievements-milestones": {
           "achievements": [
-            "Vollständige JWT-basierte Auth mit bcrypt-Hashing",
-            "Dynamische SSH-Port-Steuerung über UFW per API",
-            "Lokales Netzwerk-Discovery via Ping",
-            "Über DynDNS (olusprogr.dynv6.net) öffentlich erreichbar"
+            "Full JWT auth with bcrypt hashing",
+            "Dynamic SSH port control via UFW through the API",
+            "Local network device discovery via ping",
+            "Publicly reachable via DynDNS at olusprogr.dynv6.net"
           ],
           "milestones": []
         }
@@ -302,16 +302,16 @@
     "data": {
       "view": {
         "project-title": "Image Number Recognition AI",
-        "project-description": "Mein erstes neuronales Netz — von Grund auf mit NumPy implementiert, ohne Deep-Learning-Frameworks. Erkennt handgeschriebene Ziffern und Buchstaben (62 Klassen) aus dem EMNIST-Datensatz.",
+        "project-description": "My first neural network, built from scratch with NumPy and no deep learning frameworks. Recognizes handwritten digits and letters (62 classes) from the EMNIST dataset.",
         "subtitle": "PERSONAL PROJECT"
       },
       "main-information": {
         "project-name": "Image Number Recognition AI",
         "creation-date": "25. February 2024",
         "code-repository": "https://github.com/olusprogr/Image-number-recognition-AI-First-neural-network",
-        "thesis": "Facharbeit: Grundlagen künstlicher neuronaler Netzwerke und Lernalgorithmen am Beispiel einer selbst implementierten Ziffererkennung mit Einordnung moderner Sprachmodelle (LLMs)",
+        "thesis": "School thesis: Foundations of artificial neural networks and learning algorithms, using a self-built digit recognizer as an example, with an overview of modern language models (LLMs)",
         "thesis-link": "https://1drv.ms/w/c/55156600a3b287a3/IQC4bIMJPhFjSoa30wcjs5oKAdP6HoroCp_l5h-wg5eVviE?e=FKxkYC",
-        "total-command-functions": "62 Klassen (Ziffern 0–9, A–Z, a–z)",
+        "total-command-functions": "62 classes (digits 0-9, A-Z, a-z)",
         "version-updates": "Current version 1.3",
         "long-description": "My first neural network, built completely from scratch in pure NumPy, without frameworks like PyTorch or TensorFlow. I wrote all the math myself, including forward pass, backpropagation, cross entropy loss and He initialization, in order to truly understand the concepts. The network recognizes handwritten digits, uppercase and lowercase letters from the EMNIST dataset, 62 classes in total. The architecture has four hidden layers with 512, 256, 128 and 64 neurons, each with ReLU activation, and a softmax output layer. Alongside the code I wrote a thesis explaining the foundations of artificial neural networks and placing modern language models like LLMs into context. Across multiple versions, a monolithic script evolved into a clean, object oriented architecture."
       },
@@ -331,23 +331,23 @@
       "highlights": {
         "challenges-solutions": [
           {
-            "challenge": "Mathematik eines neuronalen Netzes (Forward Pass, Backpropagation, Cross-Entropy Loss) ohne Framework verstehen und implementieren.",
-            "solution": "Schrittweise Implementierung in reinem NumPy mit He-Initialisierung, Softmax-Output und Learning-Rate-Decay."
+            "challenge": "Understanding and implementing the math of a neural network (forward pass, backpropagation, cross entropy loss) without any framework.",
+            "solution": "Step by step implementation in pure NumPy with He initialization, softmax output and learning rate decay."
           },
           {
-            "challenge": "Sauberer Refactor von monolithischem Skript zu objektorientierter Architektur.",
-            "solution": "Trennung in NeuralNetwork, DatasetLoader, Operations (ReLU/Softmax) und LossGUI über die Versionen v1.0 → v1.3."
+            "challenge": "Refactoring a monolithic script into a clean object oriented architecture.",
+            "solution": "Split into NeuralNetwork, DatasetLoader, Operations (ReLU/Softmax) and LossGUI across versions v1.0 to v1.3."
           }
         ],
         "achievements-milestones": {
           "achievements": [
-            "Vollständig selbst implementiertes Feedforward-Netz mit 4 Hidden Layers (512→256→128→64) ohne Frameworks",
-            "Klassifikation von 62 Klassen (EMNIST byclass)",
-            "Facharbeit als wissenschaftliche Begleitarbeit verfasst"
+            "Fully self-implemented feedforward network with 4 hidden layers (512, 256, 128, 64) and no frameworks",
+            "Classification of 62 classes from the EMNIST byclass dataset",
+            "Wrote a school thesis alongside the project"
           ],
           "milestones": [
-            "v1.0 Monolithisches Skript",
-            "v1.3 Saubere OOP-Architektur"
+            "v1.0 Monolithic script",
+            "v1.3 Clean OOP architecture"
           ]
         }
       },
@@ -356,12 +356,12 @@
           {
             "version-date": "v1.0 | 25/02/2024",
             "version-topic": "Initial release",
-            "version-description": "Monolithisches Skript mit Forward Pass, Backpropagation und Cross-Entropy Loss in reinem NumPy."
+            "version-description": "Monolithic script with forward pass, backpropagation and cross entropy loss in pure NumPy."
           },
           {
             "version-date": "v1.3 | 18/04/2026",
-            "version-topic": "OOP-Refactor",
-            "version-description": "Trennung in NeuralNetwork, DatasetLoader, Operations und LossGUI; Erweiterung auf 62 Klassen (EMNIST byclass)."
+            "version-topic": "OOP refactor",
+            "version-description": "Split into NeuralNetwork, DatasetLoader, Operations and LossGUI. Expanded to 62 classes from the EMNIST byclass dataset."
           }
         ]
       }
@@ -677,14 +677,14 @@
     "data": {
       "view": {
         "project-title": "Minecraft Server Dashboard",
-        "project-description": "Webbasiertes Dashboard zum Hosten und Verwalten eigener Minecraft-Server, mit JWT-basiertem Auth-System (Login nur auf Anfrage) und Live-Server-Steuerung.",
+        "project-description": "A web based dashboard for hosting and managing Minecraft servers. Includes JWT auth with login only on request and live server control.",
         "subtitle": "PERSONAL PROJECT"
       },
       "main-information": {
         "project-name": "Minecraft Server Dashboard",
         "creation-date": "15. September 2024",
         "code-repository": "https://github.com/olusprogr/minecraft-server-dashboard",
-        "total-command-functions": "Login, Server-Verwaltung, Live-Steuerung",
+        "total-command-functions": "Login, server management, live control",
         "version-updates": "In active development",
         "long-description": "A web based dashboard for hosting and managing your own Minecraft servers. The project consists of two repositories: an Angular 17 frontend with server side rendering, Material Design, Tailwind and Bootstrap, plus an Express backend with MongoDB. Authentication runs through JWT tokens, passwords are hashed with bcrypt, and login is only granted on request. Inside the dashboard, users can configure, start and stop their servers and view live status. The project is currently in active development."
       },
@@ -712,18 +712,18 @@
       "highlights": {
         "challenges-solutions": [
           {
-            "challenge": "Sicheres Authentifizierungssystem für eingeschränkten Zugriff.",
-            "solution": "JWT-basierte Authentifizierung mit bcrypt-Password-Hashing — Login wird nur auf Anfrage freigeschaltet."
+            "challenge": "Building a secure auth system with restricted access.",
+            "solution": "JWT auth with bcrypt password hashing. Login is only granted on request."
           },
           {
-            "challenge": "Trennung von Frontend und Backend bei gleichzeitig konsistenter Session-Verwaltung.",
-            "solution": "Separates Backend-Repository (Express + MongoDB) mit JWT-Tokens, die im Frontend persistent gehalten werden."
+            "challenge": "Keeping frontend and backend separate while managing sessions consistently.",
+            "solution": "Separate backend repository with Express and MongoDB. JWT tokens are stored persistently in the frontend."
           }
         ],
         "achievements-milestones": {
           "achievements": [
-            "Vollständige Auth-Pipeline mit JWT",
-            "Angular 17 mit Server-Side-Rendering aufgesetzt"
+            "Full auth pipeline with JWT",
+            "Set up Angular 17 with server side rendering"
           ],
           "milestones": []
         }

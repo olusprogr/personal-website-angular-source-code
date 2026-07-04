@@ -5,6 +5,7 @@ import { ProjectService } from '../project.service';
 import { ProjectOverviewComponent } from './project-overview/project-overview.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { FooterComponent } from '../footer/footer.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ScrollService } from '../scroll.service';
 
 import { RouterModule } from '@angular/router';
@@ -29,7 +30,8 @@ type projects = {
     RouterModule,
     ProjectOverviewComponent,
     TimelineComponent,
-    FooterComponent
+    FooterComponent,
+    AboutmeComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

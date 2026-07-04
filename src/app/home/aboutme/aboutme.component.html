@@ -4,13 +4,52 @@
   <div class="aboutme-decor-2"></div>
   <div class="aboutme-inner">
     <div class="aboutme-image-wrap reveal reveal-left" [class.revealed]="isRevealed">
-      <img class="aboutme-image" alt="Olivier Chodura" src="../../../assets/img/img-of-me/2.jpeg">
+      <img class="aboutme-image" alt="Olivier Chodura" src="../../../assets/img/img-of-me/Gemini_Generated_Image_l7wqa3l7wqa3l7wq.png">
     </div>
     <div class="aboutme-content reveal reveal-right" [class.revealed]="isRevealed">
-      <div class="section-badge reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.15s">About Me</div>
+      <div class="section-badge reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.15s">A bit about me</div>
+      <div class="tab-content" [class.fading]="isTransitioning">
       <h1 class="aboutme-title reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.25s">{{ this.toggledAboutMe.title }}</h1>
       <p class="aboutme-text reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.35s">{{ this.toggledAboutMe.description }}</p>
       <p class="aboutme-subtext reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.45s">{{ this.toggledAboutMe.subTitle }}</p>
+
+      @if (toggledAboutMe.title === 'Skills I have Learned') {
+      <div class="skills-grid reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.5s">
+        <div class="skills-group">
+          <span class="skills-group-label">Languages</span>
+          <div class="skills-chips">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">HTML</span>
+            <span class="skill-chip">CSS</span>
+            <span class="skill-chip">Bash</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <span class="skills-group-label">Frameworks</span>
+          <div class="skills-chips">
+            <span class="skill-chip">Angular</span>
+            <span class="skill-chip">Express</span>
+            <span class="skill-chip">Node.js</span>
+            <span class="skill-chip">Tailwind</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <span class="skills-group-label">Tools & Infra</span>
+          <div class="skills-chips">
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">MongoDB</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">AWS</span>
+            <span class="skill-chip">JWT</span>
+          </div>
+        </div>
+      </div>
+      }
+
+      </div>
       <div class="aboutme-buttons reveal-child" [class.revealed]="isRevealed" style="transition-delay: 0.55s">
         <button class="tab-btn" (click)="changeText('My Journey')">My Journey</button>
         <button class="tab-btn" (click)='changeText("Skills I have Learned")'>Skills</button>

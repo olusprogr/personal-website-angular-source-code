@@ -16,6 +16,7 @@ export class AboutmeComponent implements AfterViewInit, OnDestroy {
   aboutMeData: {}[] = [];
   toggledAboutMe: any;
   isRevealed: boolean = false;
+  isTransitioning: boolean = false;
   private observer: IntersectionObserver | null = null;
 
   constructor(
@@ -48,6 +49,10 @@ export class AboutmeComponent implements AfterViewInit, OnDestroy {
   }
 
   public changeText(text: string): void {
-    this.toggledAboutMe = this.aboutMeData.find((element: any) => element.title === text)
+    this.isTransitioning = true;
+    setTimeout(() => {
+      this.toggledAboutMe = this.aboutMeData.find((element: any) => element.title === text);
+      this.isTransitioning = false;
+    }, 180);
   }
 }

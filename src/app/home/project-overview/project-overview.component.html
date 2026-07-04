@@ -1,6 +1,6 @@
 <div *ngIf="!this.isLoaded" class="loading-state">
   <div class="loading-spinner"></div>
-  <p>Loading projects...</p>
+  <p>Fetching my stuff...</p>
 </div>
 
 <section id="projects" class="projects-section">
@@ -10,11 +10,11 @@
   <div class="projects-inner">
     <div class="section-header reveal reveal-up" [class.revealed]="isSectionRevealed">
       <div>
-        <div class="section-badge">Portfolio</div>
-        <h1 class="section-title">My best Projects</h1>
+        <div class="section-badge">Stuff I've built</div>
+        <h1 class="section-title">Some things I'm proud of</h1>
         <div class="title-bar"></div>
       </div>
-      <p class="section-desc">The following provided projects represent my knowledge and experience in programming.</p>
+      <p class="section-desc">A few projects worth showing. Some took weeks, some took months, all of them taught me something.</p>
     </div>
     <div class="projects-grid">
       <div class="project-card reveal reveal-up" [class.revealed]="isSectionRevealed" *ngFor="let project of this.projectsArray; let i = index" [style.transition-delay.ms]="200 + i * 120">
