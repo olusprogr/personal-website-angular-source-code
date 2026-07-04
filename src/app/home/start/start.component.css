@@ -219,6 +219,14 @@
   box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
 }
 
+.social-btn .discord-icon {
+  color: #5865f2;
+}
+
+.social-btn:hover .discord-icon {
+  color: #fff;
+}
+
 .hero-image-wrap {
   flex-shrink: 0;
   animation: slideInRight 0.8s ease-out 0.3s both;

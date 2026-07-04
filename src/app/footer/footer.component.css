@@ -166,6 +166,17 @@
   box-shadow: 0 8px 20px rgba(26, 26, 46, 0.3);
 }
 
+.contact-icon.discord {
+  background: rgba(88, 101, 242, 0.08);
+  color: #5865f2;
+}
+
+.contact-card:hover .contact-icon.discord {
+  background: #5865f2;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(88, 101, 242, 0.3);
+}
+
 .contact-card-title {
   font-size: 17px;
   font-weight: 600;
