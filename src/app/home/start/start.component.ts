@@ -1,4 +1,6 @@
-import { Component, AfterViewInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, ChangeDetectorRef, OnDestroy, ElementRef } from '@angular/core';
+
+declare const VANTA: any;
 
 @Component({
   selector: 'app-start',
@@ -11,18 +13,62 @@ export class StartComponent implements AfterViewInit, OnDestroy {
   displayName: string = '';
   private fullName: string = 'Olivier Chodura';
   private timeout: any;
+  private vantaEffect: any = null;
+  private blockScroll = (e: Event) => e.preventDefault();
+  private blockMouse = (e: Event) => e.stopImmediatePropagation();
 
-  constructor(private cdr: ChangeDetectorRef) {
+  constructor(private cdr: ChangeDetectorRef, private elRef: ElementRef) {
     this.cdr.detach();
   }
 
   ngAfterViewInit(): void {
     this.cdr.detectChanges();
+    this.initVanta();
+    this.lockIntro();
     this.timeout = setTimeout(() => this.typeLoop(), 500);
   }
 
   ngOnDestroy(): void {
     clearTimeout(this.timeout);
+    if (this.vantaEffect) this.vantaEffect.destroy();
+    this.unlockIntro();
+  }
+
+  private lockIntro(): void {
+    window.addEventListener('wheel', this.blockScroll, { passive: false });
+    window.addEventListener('touchmove', this.blockScroll, { passive: false });
+    window.addEventListener('mousemove', this.blockMouse, true);
+  }
+
+  private unlockIntro(): void {
+    window.removeEventListener('wheel', this.blockScroll);
+    window.removeEventListener('touchmove', this.blockScroll);
+    window.removeEventListener('mousemove', this.blockMouse, true);
+    if (this.vantaEffect) {
+      this.vantaEffect.setOptions({ mouseControls: true, touchControls: true });
+    }
+  }
+
+  private initVanta(): void {
+    if (typeof VANTA !== 'undefined' && VANTA.NET) {
+      const el = this.elRef.nativeElement.querySelector('.hero-section');
+      this.vantaEffect = VANTA.NET({
+        el,
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200,
+        minWidth: 200,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xd0d2f8,
+        backgroundColor: 0xf8f7ff,
+        points: 9,
+        maxDistance: 22,
+        spacing: 18,
+        showDots: true
+      });
+    }
   }
 
   private typeLoop(): void {
@@ -30,23 +76,20 @@ export class StartComponent implements AfterViewInit, OnDestroy {
     const deleteDelay = 2000 / this.fullName.length;
     let i = 0;
 
-    // Phase 1: Type (2s)
     const typeInterval = setInterval(() => {
       i++;
       this.displayName = this.fullName.slice(0, i);
       this.cdr.detectChanges();
       if (i >= this.fullName.length) {
         clearInterval(typeInterval);
-        // Phase 2: Hold (6s)
+        this.unlockIntro();
         this.timeout = setTimeout(() => {
-          // Phase 3: Delete (2s)
           const deleteInterval = setInterval(() => {
             i--;
             this.displayName = this.fullName.slice(0, i);
             this.cdr.detectChanges();
             if (i <= 0) {
               clearInterval(deleteInterval);
-              // Phase 4: Restart typing (2s type -> 6s hold -> 2s delete -> ...)
               this.timeout = setTimeout(() => this.typeLoop(), 500);
             }
           }, deleteDelay);

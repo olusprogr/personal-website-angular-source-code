@@ -1,5 +1,10 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ParticleCanvasComponent } from '../../shared/particle-canvas/particle-canvas.component';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface TimelineEntry {
   year: string;
@@ -11,11 +16,11 @@ interface TimelineEntry {
 @Component({
   selector: 'app-timeline',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ParticleCanvasComponent],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.css'
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent implements OnInit, AfterViewInit {
   isSectionRevealed: boolean = false;
   revealedItems: boolean[] = [];
 
@@ -64,6 +69,20 @@ export class TimelineComponent implements OnInit {
 
   ngOnInit(): void {
     this.checkScroll();
+  }
+
+  ngAfterViewInit(): void {
+    this.initGsap();
+  }
+
+  private initGsap(): void {
+    gsap.fromTo('.timeline-line',
+      { scaleY: 0, transformOrigin: 'top center' },
+      {
+        scrollTrigger: { trigger: '.timeline', start: 'top 75%', end: 'bottom 20%', scrub: 1 },
+        scaleY: 1, ease: 'none'
+      }
+    );
   }
 
   @HostListener('window:scroll')

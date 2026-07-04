@@ -1,12 +1,18 @@
 import { Component, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
 import { AboutmeService } from '../../aboutme.service';
 import { CommonModule } from '@angular/common';
+import { ParticleCanvasComponent } from '../../shared/particle-canvas/particle-canvas.component';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-aboutme',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    ParticleCanvasComponent
   ],
   templateUrl: './aboutme.component.html',
   styleUrl: './aboutme.component.css'
@@ -42,6 +48,11 @@ export class AboutmeComponent implements AfterViewInit, OnDestroy {
       );
       this.observer.observe(section);
     }
+    this.initGsap();
+  }
+
+  private initGsap(): void {
+    // intentionally empty - CSS reveal handles aboutme animations
   }
 
   ngOnDestroy(): void {

@@ -6,7 +6,9 @@
       "Bash(node_modules/.bin/ng build --configuration development)",
       "Bash(node_modules/.bin/ng build)",
       "Bash(curl -s \"https://my-project-api-cgm7.onrender.com/api/portfolio/getProjects\")",
-      "Bash(npx ng build)"
+      "Bash(npx ng build)",
+      "Bash(npm install *)",
+      "Bash(npx ng *)"
     ]
   }
 }
