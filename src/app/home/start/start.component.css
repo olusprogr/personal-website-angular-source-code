@@ -272,3 +272,10 @@
   .hero-badge { margin: 0 auto 24px; }
   .hero-stats { justify-content: center; }
 }
+
+@media (max-width: 767px) {
+  .hero-section ::ng-deep .vanta-canvas {
+    transform: translateY(-8%) scale(1.18);
+    transform-origin: center top;
+  }
+}

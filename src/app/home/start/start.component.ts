@@ -52,6 +52,7 @@ export class StartComponent implements AfterViewInit, OnDestroy {
   private initVanta(): void {
     if (typeof VANTA !== 'undefined' && VANTA.NET) {
       const el = this.elRef.nativeElement.querySelector('.hero-section');
+      const isMobile = window.innerWidth < 768;
       this.vantaEffect = VANTA.NET({
         el,
         mouseControls: false,
@@ -63,9 +64,9 @@ export class StartComponent implements AfterViewInit, OnDestroy {
         scaleMobile: 1.0,
         color: 0xd0d2f8,
         backgroundColor: 0xf8f7ff,
-        points: 9,
-        maxDistance: 22,
-        spacing: 18,
+        points: isMobile ? 3 : 9,
+        maxDistance: isMobile ? 15 : 22,
+        spacing: isMobile ? 24 : 18,
         showDots: true
       });
     }
