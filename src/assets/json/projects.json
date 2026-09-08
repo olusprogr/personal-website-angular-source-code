@@ -5,7 +5,7 @@
     "data": {
       "view": {
         "project-title": "ArchiTect Discord Bot",
-        "project-description": "A fast, efficient, and user-friendly bot with numerous features for your Discord servers.",
+        "project-description": "A Discord bot my team and I kept adding features to for over a year. Moderation, a rank system, meme and Steam commands, more than we planned for.",
         "project-img": "../../../assets/img/architect-discord-bot/architect.png",
         "subtitle": "TEAM BASED"
       },
@@ -154,7 +154,7 @@
     "data": {
       "view": {
         "project-title": "My Portfolio",
-        "project-description": "My official Portfolio to showcase all my works related to programming",
+        "project-description": "This site right here. Built with Angular, pulls its project data from a JSON file, redesigned more times than I can count.",
         "project-img": "../../../assets/img/my-portfolio/my-portfolio.png",
         "project-link": "https://olusprogr.github.io/personal-website/",
         "subtitle": "PERSONAL PROJECT"
@@ -232,7 +232,7 @@
     "data": {
       "view": {
         "project-title": "KI-Server",
-        "project-description": "A self-hosted API server for remote controlling my own home server. Includes JWT auth, SSH tunnel control via UFW firewall, and device discovery on the local network. Reachable at olusprogr.dynv6.net (DynDNS, not always online).",
+        "project-description": "A self-hosted API server for controlling my home server remotely. JWT auth, SSH tunnel control through UFW, device discovery on the local network. Lives at olusprogr.dynv6.net, when it's online.",
         "project-img": "../../../assets/img/ki-server/ki-server-logo.svg",
         "subtitle": "PERSONAL PROJECT"
       },
@@ -302,7 +302,7 @@
     "data": {
       "view": {
         "project-title": "Image Number Recognition AI",
-        "project-description": "My first neural network, built from scratch with NumPy and no deep learning frameworks. Recognizes handwritten digits and letters (62 classes) from the EMNIST dataset.",
+        "project-description": "My first neural network, built from scratch in NumPy, no frameworks. Recognizes handwritten digits and letters, 62 classes, off the EMNIST dataset.",
         "subtitle": "PERSONAL PROJECT"
       },
       "main-information": {
@@ -373,7 +373,7 @@
     "data": {
       "view": {
         "project-title": "Python Banking System",
-        "project-description": "Streamlined Banking System: A Python OOP and SQL Implementation.",
+        "project-description": "A banking system in Python. Accounts, deposits, withdrawals, transfers, all backed by SQL. Mostly an excuse to get OOP and databases into my head.",
         "project-img": "../../../assets/img/banking-system/banking-system.png",
         "subtitle": "PERSONAL PROJECT"
       },
@@ -422,7 +422,7 @@
     "data": {
       "view": {
         "project-title": "Pay2drink",
-        "project-description": "Pay2Drink is an Angular-based solution for beverage vending machines, allowing users to conveniently order and pay for their favorite drinks.",
+        "project-description": "An Angular app for drink vending machines, built during my internship at Atruvia. Log in, pick a drink, pay for it.",
         "subtitle": "TEAM BASED"
       },
       "main-information": {
@@ -498,7 +498,7 @@
     "data": {
       "view": {
         "project-title": "Game Team",
-        "project-description": "Game Team is a team of developers and 3D-designers who create Counter Strike maps for the community. (In Cooperation with ArchiTect-Development)",
+        "project-description": "Me and a few others building Counter Strike maps for the community. Ran this one together with ArchiTect-Development.",
         "project-img": "../../../assets/img/game-team/game-team.png",
         "subtitle": "TEAM BASED"
       },
@@ -597,7 +597,7 @@
     "data": {
       "view": {
         "project-title": "Savesphere",
-        "project-description": "Savesphere is an affiliate marketing website with Computer component and gaming stuff offers.",
+        "project-description": "An affiliate site for computer parts and gaming gear, built together with a friend.",
         "subtitle": "TEAM BASED",
         "project-img": "../../../assets/img/savesphere/savesphere.jpeg"
       },
@@ -677,7 +677,7 @@
     "data": {
       "view": {
         "project-title": "Minecraft Server Dashboard",
-        "project-description": "A web based dashboard for hosting and managing Minecraft servers. Includes JWT auth with login only on request and live server control.",
+        "project-description": "A dashboard for hosting and managing Minecraft servers. JWT auth, login only on request, live control over the server.",
         "subtitle": "PERSONAL PROJECT"
       },
       "main-information": {
