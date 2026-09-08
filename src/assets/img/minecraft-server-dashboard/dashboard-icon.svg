@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="dashTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#a5b4fc"/>
+    </linearGradient>
+    <linearGradient id="dashLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="dashRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="36" height="36" rx="10" fill="#ffffff"/>
+  <g stroke="#ffffff" stroke-width="0.8" stroke-linejoin="round">
+    <path d="M18 3 L27 8 L18 13 L9 8 Z" fill="url(#dashTop)"/>
+    <path d="M9 8 L18 13 L18 24 L9 19 Z" fill="url(#dashLeft)"/>
+    <path d="M27 8 L18 13 L18 24 L27 19 Z" fill="url(#dashRight)"/>
+  </g>
+  <circle cx="27" cy="8" r="2.1" fill="#4ade80" stroke="#ffffff" stroke-width="1"/>
+</svg>

@@ -137,6 +137,18 @@
   transform: translateX(-50%);
 }
 
+.timeline-line-arrow {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 9px solid #8b5cf6;
+  transform: translateX(-50%);
+}
+
 .timeline-item {
   display: flex;
   align-items: flex-start;
@@ -265,6 +277,10 @@
   .section-desc { max-width: 100%; align-self: auto; }
 
   .timeline-line {
+    left: 8px;
+  }
+
+  .timeline-line-arrow {
     left: 8px;
   }
 

@@ -51,7 +51,7 @@ export class HomeComponent implements AfterViewInit {
   }
 
   public scrollToTarget(target: string): void {
-    if (target === 'home') {window.scrollTo({ top: 0, behavior: 'smooth' }); return} 
+    if (target === 'home') {window.scrollTo({ top: 0, behavior: 'smooth' }); return}
     if (target === 'footer') {window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); return}
     else {
       const targetElement = this.elRef.nativeElement.querySelector(`#${target}`);

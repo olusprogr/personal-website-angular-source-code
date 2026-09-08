@@ -1,19 +1,19 @@
 [
   {
-    "title": "My Journey",
-    "description": "When I first started coding I had no idea what I was doing. Everything looked like random symbols on a screen. I spent way too many hours on YouTube tutorials just to get the basics down. Then one day I found Tkinter in Python and suddenly I could build stuff with a real interface. My first real project was a food ordering app based on my school cafeteria menu. Nothing fancy, but I was hooked. From there I just kept going, picked up new languages, started bigger projects, and never really stopped.",
-    "subTitle": "Right now I'm into Linux server management and building APIs.",
+    "title": "My Beginning",
+    "description": "Even before that I was curious about PC hardware, always wanting to know how everything worked. That curiosity turned me from a gamer into a programmer. When I started coding I had no idea what I was doing. Everything looked like random symbols. I spent hours on YouTube tutorials to get the basics down. Then I found Tkinter in Python and could build stuff with a real interface. My first real project was a food ordering app, based on my school cafeteria menu. That's where I got into object oriented programming for the first time. Nothing fancy. From there I kept going, picked up new languages, started bigger projects, never stopped.",
+    "subTitle": "",
     "subDescription": "Now let me show you some of my projects."
   },
   {
     "title": "My Experience",
-    "description": "I've been writing code for about 5 years now. Started with Python, then moved into JavaScript and TypeScript for both frontend and backend. I spend most of my time building APIs and writing object oriented code. I can put together full pages in Angular and get them running on an AWS server. I also picked up some C++ and Java basics in school, enough to understand how things work under the hood. I just like figuring things out and getting better at what I do, one project at a time.",
+    "description": "I've been writing code for about 5 years now. Started with Python, then moved into JavaScript and TypeScript for both frontend and backend. I spend most of my time building APIs and writing object oriented code. I can put together full pages in Angular and get them running on an AWS server. I did my first professional internship at Atruvia in Münster, where I worked in a real dev team for the first time. I also picked up some C++ and Java basics in school, enough to understand how things work under the hood. I like figuring things out and getting better at what I do, one project at a time.",
     "subTitle": "Writing code since I was 13.",
     "subDescription": ""
   },
   {
     "title": "Skills I have Learned",
-    "description": "Python was my starting point. OOP, Tkinter, Pycord, SQLite, all that good stuff. After about a year I jumped into TypeScript and Angular, which is what I mainly use for web projects now. I also run Linux on a VM where I host my Discord bot and manage everything with cron jobs. Lately I've been getting into API development with Express, which has been fun to learn.",
+    "description": "Python was my starting point. I used it to learn OOP by building my Discord bot with Pycord, which runs on a Raspberry Pi under Linux, and to store data locally with SQLite. After about a year I jumped into TypeScript and Angular, first during my internship at Atruvia in Münster. This site runs on Cloudflare, where I also learned to configure domains and manage traffic myself. From there I had a lot of fun building several more sites, each with a fully automated backend, a clean frontend, and a MongoDB database. I also used those same web skills to build my first game, Battleship, with Phaser 3 and a small Node/Python backend for multiplayer room codes. With everything shifting toward AI, I wanted to actually understand how it works instead of just using existing libraries. I built a neural network completely from scratch in NumPy, no PyTorch or TensorFlow, and used it as the basis for my school thesis on artificial neural networks. I'm still working through the math behind it, trying to understand AI from the ground up.",
     "subTitle": "Always picking up something new. Tools, frameworks, whatever catches my interest.",
     "subDescription": ""
   }

@@ -1,11 +1,10 @@
-import { Component, AfterViewInit, ChangeDetectorRef, OnDestroy, ElementRef } from '@angular/core';
-
-declare const VANTA: any;
+import { Component, AfterViewInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { ParticleCanvasComponent } from '../../shared/particle-canvas/particle-canvas.component';
 
 @Component({
   selector: 'app-start',
   standalone: true,
-  imports: [],
+  imports: [ParticleCanvasComponent],
   templateUrl: './start.component.html',
   styleUrl: './start.component.css'
 })
@@ -13,63 +12,31 @@ export class StartComponent implements AfterViewInit, OnDestroy {
   displayName: string = '';
   private fullName: string = 'Olivier Chodura';
   private timeout: any;
-  private vantaEffect: any = null;
   private blockScroll = (e: Event) => e.preventDefault();
-  private blockMouse = (e: Event) => e.stopImmediatePropagation();
 
-  constructor(private cdr: ChangeDetectorRef, private elRef: ElementRef) {
+  constructor(private cdr: ChangeDetectorRef) {
     this.cdr.detach();
   }
 
   ngAfterViewInit(): void {
     this.cdr.detectChanges();
-    this.initVanta();
     this.lockIntro();
     this.timeout = setTimeout(() => this.typeLoop(), 500);
   }
 
   ngOnDestroy(): void {
     clearTimeout(this.timeout);
-    if (this.vantaEffect) this.vantaEffect.destroy();
     this.unlockIntro();
   }
 
   private lockIntro(): void {
     window.addEventListener('wheel', this.blockScroll, { passive: false });
     window.addEventListener('touchmove', this.blockScroll, { passive: false });
-    window.addEventListener('mousemove', this.blockMouse, true);
   }
 
   private unlockIntro(): void {
     window.removeEventListener('wheel', this.blockScroll);
     window.removeEventListener('touchmove', this.blockScroll);
-    window.removeEventListener('mousemove', this.blockMouse, true);
-    if (this.vantaEffect) {
-      this.vantaEffect.setOptions({ mouseControls: true, touchControls: true });
-    }
-  }
-
-  private initVanta(): void {
-    if (typeof VANTA !== 'undefined' && VANTA.NET) {
-      const el = this.elRef.nativeElement.querySelector('.hero-section');
-      const isMobile = window.innerWidth < 768;
-      this.vantaEffect = VANTA.NET({
-        el,
-        mouseControls: false,
-        touchControls: false,
-        gyroControls: false,
-        minHeight: 200,
-        minWidth: 200,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0xd0d2f8,
-        backgroundColor: 0xf8f7ff,
-        points: isMobile ? 3 : 9,
-        maxDistance: isMobile ? 15 : 22,
-        spacing: isMobile ? 24 : 18,
-        showDots: true
-      });
-    }
   }
 
   private typeLoop(): void {

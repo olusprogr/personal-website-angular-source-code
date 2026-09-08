@@ -6,7 +6,7 @@
       "view": {
         "project-title": "ArchiTect Discord Bot",
         "project-description": "A Discord bot my team and I kept adding features to for over a year. Moderation, a rank system, meme and Steam commands, more than we planned for.",
-        "project-img": "../../../assets/img/architect-discord-bot/architect.png",
+        "project-img": "../../../assets/img/architect-discord-bot/architect-at-logo.jpeg",
         "subtitle": "TEAM BASED"
       },
       "main-information": {
@@ -143,6 +143,11 @@
             "version-date": "v2.0.x | 31/03/2023",
             "version-topic": "Added commands",
             "version-description": "/steam search_for_user /steam get_user_details /steam get_user_friend_list /suggest about_us"
+          },
+          {
+            "version-date": "08/09/2026",
+            "version-topic": "New AT logo",
+            "version-description": "Replaced the original bot icon with a new AT logo. The old one is still in the repo under architect.png."
           }
         ]
       }
@@ -155,7 +160,7 @@
       "view": {
         "project-title": "My Portfolio",
         "project-description": "This site right here. Built with Angular, pulls its project data from a JSON file, redesigned more times than I can count.",
-        "project-img": "../../../assets/img/my-portfolio/my-portfolio.png",
+        "project-img": "../../../assets/img/my-portfolio/portfolio-logo.svg",
         "project-link": "https://olusprogr.github.io/personal-website/",
         "subtitle": "PERSONAL PROJECT"
       },
@@ -231,13 +236,13 @@
     "project": "ki-server",
     "data": {
       "view": {
-        "project-title": "KI-Server",
+        "project-title": "Home Server",
         "project-description": "A self-hosted API server for controlling my home server remotely. JWT auth, SSH tunnel control through UFW, device discovery on the local network. Lives at olusprogr.dynv6.net, when it's online.",
         "project-img": "../../../assets/img/ki-server/ki-server-logo.svg",
         "subtitle": "PERSONAL PROJECT"
       },
       "main-information": {
-        "project-name": "KI-Server",
+        "project-name": "Home Server",
         "creation-date": "24. July 2025",
         "code-repository": "https://github.com/olusprogr/ki-server",
         "project-website": "https://olusprogr.dynv6.net",
@@ -303,6 +308,7 @@
       "view": {
         "project-title": "Image Number Recognition AI",
         "project-description": "My first neural network, built from scratch in NumPy, no frameworks. Recognizes handwritten digits and letters, 62 classes, off the EMNIST dataset.",
+        "project-img": "../../../assets/img/image-number-recognition-ai/neural-net-icon.svg",
         "subtitle": "PERSONAL PROJECT"
       },
       "main-information": {
@@ -368,6 +374,55 @@
     }
   },
   {
+    "_id": "local-2024-07-24-battleship",
+    "project": "battleship",
+    "data": {
+      "view": {
+        "project-title": "Battleship",
+        "project-description": "My first game. A Battleship clone built with Phaser 3 and Vite, with a small backend for multiplayer room codes.",
+        "project-link": "https://battleship-seyq.onrender.com",
+        "project-img": "../../../assets/img/battleship/battleship-icon.svg",
+        "subtitle": "TEAM BASED"
+      },
+      "main-information": {
+        "project-name": "Battleship",
+        "creation-date": "24. July 2024",
+        "code-repository": "https://github.com/olusprogr/battleship",
+        "project-website": "https://battleship-seyq.onrender.com",
+        "total-command-functions": "Game board, ship placement, hit detection, multiplayer room codes",
+        "version-updates": "In active development",
+        "long-description": "My first game, a Battleship clone built with Phaser 3 and Vite. It runs on a small backend with a Node API and a Python component that generates the room codes for multiplayer matches. Getting into game dev after mostly building web apps was a different kind of problem, closer to the OOP and algorithm work I had already been doing than to the usual web project."
+      },
+      "technologies-tools": {
+        "technologies": [
+          "JavaScript",
+          "Python",
+          "HTML",
+          "CSS"
+        ],
+        "tools": [
+          "Phaser 3",
+          "Vite",
+          "Node.js",
+          "Git",
+          "GitHub"
+        ]
+      },
+      "highlights": {
+        "challenges-solutions": [],
+        "achievements-milestones": {
+          "achievements": [
+            "First game built and shipped"
+          ],
+          "milestones": []
+        }
+      },
+      "version-updates": {
+        "versions": []
+      }
+    }
+  },
+  {
     "_id": "666aed1f0023355252c21c31",
     "project": "python-banking-system",
     "data": {
@@ -423,6 +478,7 @@
       "view": {
         "project-title": "Pay2drink",
         "project-description": "An Angular app for drink vending machines, built during my internship at Atruvia. Log in, pick a drink, pay for it.",
+        "project-img": "../../../assets/img/pay2drink/pay2drink-icon.svg",
         "subtitle": "TEAM BASED"
       },
       "main-information": {
@@ -678,6 +734,7 @@
       "view": {
         "project-title": "Minecraft Server Dashboard",
         "project-description": "A dashboard for hosting and managing Minecraft servers. JWT auth, login only on request, live control over the server.",
+        "project-img": "../../../assets/img/minecraft-server-dashboard/dashboard-icon.svg",
         "subtitle": "PERSONAL PROJECT"
       },
       "main-information": {
