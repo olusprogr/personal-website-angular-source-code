@@ -32,8 +32,8 @@ export class ParticleCanvasComponent implements AfterViewInit, OnDestroy {
   private initCanvas(): void {
     const canvas = this.elRef.nativeElement.querySelector('.particle-canvas') as HTMLCanvasElement;
     const ctx = canvas.getContext('2d')!;
-    const DIST = 130;
-    const COUNT = 76;
+    const DIST = 100;
+    const COUNT = 110;
 
     const resize = () => {
       canvas.width = canvas.offsetWidth;
@@ -68,7 +68,8 @@ export class ParticleCanvasComponent implements AfterViewInit, OnDestroy {
 
       for (let i = 0; i < particles.length - 2; i++) {
         if (used[i]) continue;
-        for (let j = i + 1; j < particles.length - 1; j++) {
+        let formedTriangle = false;
+        for (let j = i + 1; j < particles.length - 1 && !formedTriangle; j++) {
           if (used[j]) continue;
           if (dist(particles[i], particles[j]) > DIST) continue;
           for (let k = j + 1; k < particles.length; k++) {
@@ -86,25 +87,7 @@ export class ParticleCanvasComponent implements AfterViewInit, OnDestroy {
             ctx.strokeStyle = 'rgba(99,102,241,0.1)';
             ctx.lineWidth = 1;
             ctx.stroke();
-            break;
-          }
-        }
-      }
-
-      for (let i = 0; i < particles.length - 1; i++) {
-        if (used[i]) continue;
-        for (let j = i + 1; j < particles.length; j++) {
-          if (used[j]) continue;
-          const d = dist(particles[i], particles[j]);
-          if (d < DIST) {
-            used[i] = used[j] = true;
-            const alpha = (1 - d / DIST) * 0.12;
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(99,102,241,${alpha})`;
-            ctx.lineWidth = 1;
-            ctx.stroke();
+            formedTriangle = true;
             break;
           }
         }
@@ -113,7 +96,7 @@ export class ParticleCanvasComponent implements AfterViewInit, OnDestroy {
       for (const p of particles) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(99,102,241,0.15)';
+        ctx.fillStyle = 'rgba(99,102,241,0.18)';
         ctx.fill();
       }
 
