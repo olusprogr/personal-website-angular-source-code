@@ -1,7 +1,6 @@
-import { Component, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, ElementRef, AfterViewInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
 import { AboutmeService } from '../../aboutme.service';
 import { CommonModule } from '@angular/common';
-import { ParticleCanvasComponent } from '../../shared/particle-canvas/particle-canvas.component';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -10,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-aboutme',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
-    CommonModule,
-    ParticleCanvasComponent
+    CommonModule
   ],
   templateUrl: './aboutme.component.html',
   styleUrl: './aboutme.component.css'

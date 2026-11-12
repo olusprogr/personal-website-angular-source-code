@@ -2,7 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Website</title>
+  <title>Olivier Chodura</title>
+  <meta name="description" content="Olivier Chodura's portfolio: projects, timeline and contact.">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">

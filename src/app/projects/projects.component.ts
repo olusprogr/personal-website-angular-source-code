@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectorRef, Component, Input, OnInit, ElementRef } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, Input, OnInit, ElementRef, ChangeDetectionStrategy } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { ProjectService } from '../project.service';
 import { CommonModule } from '@angular/common';
@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-projects',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     HeaderComponent,
     CommonModule

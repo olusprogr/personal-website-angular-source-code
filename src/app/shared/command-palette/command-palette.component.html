@@ -1,0 +1,51 @@
+@if (palette.isOpen()) {
+  <div class="palette-backdrop" (click)="palette.close()">
+    <div class="palette" role="dialog" aria-modal="true" aria-label="Command palette" (click)="$event.stopPropagation()">
+      <div class="palette-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input
+          #searchInput
+          class="palette-input"
+          type="text"
+          placeholder="Search sections, projects, actions"
+          autocomplete="off"
+          spellcheck="false"
+          aria-label="Search"
+          [value]="query()"
+          (input)="onInput(searchInput.value)">
+        <kbd class="palette-kbd">esc</kbd>
+      </div>
+
+      @if (notice()) {
+        <div class="palette-notice">{{ notice() }}</div>
+      } @else {
+        <div class="palette-list" #list>
+          @for (command of results(); track command.group + command.label; let i = $index) {
+            @if (startsGroup(i)) {
+              <div class="palette-group">{{ command.group }}</div>
+            }
+            <button
+              type="button"
+              class="palette-item"
+              [class.active]="i === activeIndex()"
+              (mousemove)="setActive(i)"
+              (click)="runAt(i)">
+              <span class="palette-item-label">{{ command.label }}</span>
+              @if (command.hint) {
+                <span class="palette-item-hint">{{ command.hint }}</span>
+              }
+            </button>
+          } @empty {
+            <div class="palette-empty">Nothing matches "{{ query() }}".</div>
+          }
+        </div>
+      }
+
+      <div class="palette-footer">
+        <span><kbd class="palette-kbd">↑</kbd><kbd class="palette-kbd">↓</kbd> move</span>
+        <span><kbd class="palette-kbd">↵</kbd> select</span>
+        <span><kbd class="palette-kbd">Ctrl</kbd><kbd class="palette-kbd">K</kbd> toggle</span>
+      </div>
+    </div>
+  </div>
+}

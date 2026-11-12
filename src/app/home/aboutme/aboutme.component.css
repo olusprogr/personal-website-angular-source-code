@@ -1,7 +1,7 @@
 .aboutme-section {
-  background: #f8f9fc;
+  background: var(--surface-alt);
   padding: 70px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-top: 1px solid rgb(var(--line-rgb) / 0.04);
   position: relative;
   overflow: hidden;
 }
@@ -86,7 +86,7 @@
   height: 320px;
   object-fit: cover;
   border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgb(var(--line-rgb) / 0.06);
   box-shadow: 0 20px 50px rgba(99, 102, 241, 0.08), 0 8px 25px rgba(0, 0, 0, 0.06);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s;
 }
@@ -104,7 +104,7 @@
   border-radius: 100px;
   font-size: 11px;
   font-weight: 700;
-  color: #6366f1;
+  color: var(--accent-text);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -113,7 +113,7 @@
 .aboutme-title {
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--ink);
   margin-bottom: 16px;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -121,14 +121,14 @@
 
 .aboutme-text {
   font-size: 15px;
-  color: #64748b;
+  color: var(--muted);
   line-height: 1.8;
   margin-bottom: 12px;
 }
 
 .aboutme-subtext {
   font-size: 15px;
-  color: #94a3b8;
+  color: var(--faint);
   line-height: 1.8;
   margin-bottom: 14px;
 }
@@ -149,7 +149,7 @@
 .skills-group-label {
   font-size: 10px;
   font-weight: 700;
-  color: #94a3b8;
+  color: var(--faint);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -167,7 +167,7 @@
   border-radius: 100px;
   font-size: 12px;
   font-weight: 500;
-  color: #6366f1;
+  color: var(--accent-text);
   transition: all 0.2s;
   cursor: default;
 }
@@ -196,10 +196,10 @@
 
 .tab-btn {
   padding: 10px 22px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--surface);
+  border: 1px solid rgb(var(--line-rgb) / 0.08);
   border-radius: 10px;
-  color: #64748b;
+  color: var(--muted);
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;

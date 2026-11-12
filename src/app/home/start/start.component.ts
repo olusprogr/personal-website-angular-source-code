@@ -1,10 +1,12 @@
-import { Component, AfterViewInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, ChangeDetectorRef, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
 import { ParticleCanvasComponent } from '../../shared/particle-canvas/particle-canvas.component';
+import { CountUpDirective } from '../../shared/count-up.directive';
 
 @Component({
   selector: 'app-start',
   standalone: true,
-  imports: [ParticleCanvasComponent],
+  changeDetection: ChangeDetectionStrategy.Eager,
+  imports: [ParticleCanvasComponent, CountUpDirective],
   templateUrl: './start.component.html',
   styleUrl: './start.component.css'
 })

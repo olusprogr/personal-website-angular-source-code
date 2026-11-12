@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ProjectService } from './project.service';
+import { CommandPaletteComponent } from './shared/command-palette/command-palette.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     RouterOutlet,
-    CommonModule
+    CommonModule,
+    CommandPaletteComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

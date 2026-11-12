@@ -1,8 +1,8 @@
-import { ChangeDetectorRef, Component, OnInit, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, ElementRef, AfterViewInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
 import { ProjectService } from '../../project.service';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { ParticleCanvasComponent } from '../../shared/particle-canvas/particle-canvas.component';
+import { TiltDirective } from '../../shared/tilt.directive';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -11,10 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-project-overview',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     CommonModule,
     RouterLink,
-    ParticleCanvasComponent
+    TiltDirective
   ],
   templateUrl: './project-overview.component.html',
   styleUrl: './project-overview.component.css'

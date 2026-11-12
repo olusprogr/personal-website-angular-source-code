@@ -7,7 +7,7 @@
 }
 
 .background {
-  background: linear-gradient(160deg, #ffffff 0%, #f0f0ff 40%, #e8e6ff 70%, #f5f3ff 100%);
+  background: var(--hero-bg);
   background-size: 200% 200%;
 }
 
@@ -42,7 +42,7 @@
   border-radius: 100px;
   font-size: 13px;
   font-weight: 500;
-  color: #6366f1;
+  color: var(--accent-text);
   margin-bottom: 24px;
   letter-spacing: 0.03em;
   animation: fadeInUp 0.6s ease-out 0.2s both;
@@ -62,7 +62,7 @@
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   line-height: 1.15;
-  color: #1a1a2e;
+  color: var(--ink);
   margin-bottom: 20px;
   letter-spacing: -0.02em;
   animation: fadeInUp 0.6s ease-out 0.35s both;
@@ -115,7 +115,7 @@
 
 .hero-subtitle {
   font-size: 17px;
-  color: #64748b;
+  color: var(--muted);
   line-height: 1.7;
   margin-bottom: 40px;
   animation: fadeInUp 0.6s ease-out 0.5s both;
@@ -133,10 +133,10 @@
   align-items: center;
   gap: 8px;
   padding: 10px 20px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--surface);
+  border: 1px solid rgb(var(--line-rgb) / 0.08);
   border-radius: 10px;
-  color: #374151;
+  color: var(--ink-soft);
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
@@ -213,7 +213,7 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 1.15;
-  color: #6366f1;
+  color: var(--accent-text);
   transform: rotate(-4deg);
   transform-origin: center top;
 }
@@ -236,7 +236,7 @@
   height: 340px;
   object-fit: cover;
   border-radius: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgb(var(--line-rgb) / 0.06);
   box-shadow: 0 25px 60px rgba(99, 102, 241, 0.12), 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
 }
@@ -263,14 +263,14 @@
 .hero-stat-number {
   font-size: 22px;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--ink);
   letter-spacing: -0.02em;
   line-height: 1;
 }
 
 .hero-stat-label {
   font-size: 12px;
-  color: #94a3b8;
+  color: var(--faint);
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -278,7 +278,7 @@
 .hero-stat-divider {
   width: 1px;
   height: 32px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgb(var(--line-rgb) / 0.1);
   flex-shrink: 0;
 }
 
@@ -297,4 +297,8 @@
   .social-links { justify-content: center; }
   .hero-badge { margin: 0 auto 24px; }
   .hero-stats { justify-content: center; }
+}
+
+.hero-stat-number {
+  font-variant-numeric: tabular-nums;
 }

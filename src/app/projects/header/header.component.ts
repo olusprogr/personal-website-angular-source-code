@@ -1,10 +1,11 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
 import { ProjectService } from '../../project.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

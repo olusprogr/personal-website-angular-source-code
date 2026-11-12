@@ -1,0 +1,121 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: var(--surface);
+}
+
+.legal-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgb(var(--surface-rgb) / 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgb(var(--line-rgb) / 0.06);
+}
+
+.legal-header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legal-header-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border: 1px solid rgb(var(--line-rgb) / 0.08);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.legal-back:hover {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 72px 40px 96px;
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.legal-badge {
+  display: inline-flex;
+  padding: 4px 14px;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent-text);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.legal-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.legal-bar {
+  width: 36px;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 2px;
+  margin-bottom: 48px;
+}
+
+.legal-section {
+  padding: 24px 0;
+  border-top: 1px solid rgb(var(--line-rgb) / 0.06);
+}
+
+.legal-section h2 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 10px;
+}
+
+.legal-section p,
+.legal-section address {
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+.legal-section a {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .legal-header-inner { padding: 0 24px; }
+  .legal { padding: 48px 24px 72px; }
+}

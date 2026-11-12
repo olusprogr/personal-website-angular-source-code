@@ -1,4 +1,4 @@
-import { Component, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, AfterViewInit, ChangeDetectionStrategy } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StartComponent } from './start/start.component';
 import { ProjectService } from '../project.service';
@@ -7,6 +7,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { FooterComponent } from '../footer/footer.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ScrollService } from '../scroll.service';
+import { TechMarqueeComponent } from '../shared/tech-marquee/tech-marquee.component';
 
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -23,6 +24,7 @@ type projects = {
 @Component({
   selector: 'app-home',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     NavbarComponent,
     StartComponent,
@@ -31,7 +33,8 @@ type projects = {
     ProjectOverviewComponent,
     TimelineComponent,
     FooterComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    TechMarqueeComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

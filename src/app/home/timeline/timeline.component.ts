@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ParticleCanvasComponent } from '../../shared/particle-canvas/particle-canvas.component';
 import gsap from 'gsap';
@@ -16,6 +16,7 @@ interface TimelineEntry {
 @Component({
   selector: 'app-timeline',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [CommonModule, ParticleCanvasComponent],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.css'
